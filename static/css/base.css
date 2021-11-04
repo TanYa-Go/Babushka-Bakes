@@ -1,5 +1,15 @@
-body {
-    background-image: url('media/background.jpg') no-repeat center center;
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+
+.background {
+    background-image: url('../../media/background.jpg');
     background-size: cover;
     
+}
+
+.background h2 {
+    font-family: Ceviche One;
+}
+
+.row { 
+    flex-wrap: nowrap;
 }

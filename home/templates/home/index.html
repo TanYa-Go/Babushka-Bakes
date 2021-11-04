@@ -2,9 +2,9 @@
 {% load static %}
 
 {% block content %}
-<div class="container-fluid">
+<div class="container-fluid background">
   <a href="{% url 'home' %}" class="nav-link main-logo-link">
-    <h2 class="logo-font display-4 text-black my-5 text-center"><strong>Babushka</strong> Bakes</h2>
+    <h2 class="font-weight-light display-2 text-light my-5 text-center">Babushka Bakes</h2>
   </a>
 </div>
 
@@ -74,7 +74,7 @@
           <li class="list-inline-item">
             <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="">
               <div class="text-center">
-                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                 <p class="my-0">
                   {% if grand_total %}
                   ${{ grand_total|floatformat:2 }}
@@ -91,4 +91,45 @@
   </div>
 </nav>
 
+
+<div class="container">
+<div class="row">
+    <div class="col-3 card text-white bg-primary mb-3 my-3 ml-3" style="max-width: 17rem;">
+      <div class="card-header">
+          <img src="/media/cake.jpg" alt="A picture of a cake" width=100%>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Cakes</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="col-3 card text-white bg-secondary mb-3 my-3 ml-3" style="max-width: 17rem;">
+      <div class="card-header">
+        <img src="/media/cookies.jpg" alt="A picture of cookies" width=100%>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Cookies</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="col-3 card text-white bg-primary mb-3 my-3 ml-3" style="max-width: 17rem;">
+      <div class="card-header">
+        <img src="/media/breads.jpg" alt="A picture of a bread loaf" width=100%>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Bread</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="col-3 card text-white bg-secondary mb-3 my-3 ml-3" style="max-width: 17rem;">
+      <div class="card-header">
+        <img src="/media/donuts.jpg" alt="A picture of donuts" width=100%>
+      </div>
+      <div class="card-body">
+        <h4 class="card-title">Donuts</h4>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
