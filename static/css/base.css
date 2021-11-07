@@ -32,14 +32,14 @@ icon {
 }
 
 .shop-now-button {
-    background: black;
+    background: rgba(235, 137, 170, 0.979);
     color: white;
     min-width: 200px;
     font-family: Mohave;
 }
 
-.btn-black {
-    background: black;
+.btn-pink {
+    background: rgba(235, 137, 170, 0.979);
     color: white;
 }
 
@@ -49,7 +49,7 @@ icon {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
+    background: black;
     color: white;
 }
 
@@ -60,6 +60,13 @@ icon {
 .border-black {
     border: 1px solid black !important;
 }
+
+.bg-pink {
+    background:rgba(235, 137, 170, 0.979) !important;
+}
+
+.dropdown-item:hover {
+    background: rgba(235, 137, 170, 0.979);
 
 /* -------------------------------- Media Queries */
 
