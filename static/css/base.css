@@ -26,20 +26,36 @@ icon {
     font-family: Mohave;
 }
 
+.menu-font {
+    text-transform: uppercase;
+    font-family: Mohave;
+    font-size: 20px;
+}
+
 .main-logo-link {
     width: fit-content;
     font-family: Mohave;
 }
 
 .shop-now-button {
-    background: rgba(235, 137, 170, 0.979);
+    background: #f57e87;
     color: white;
     min-width: 200px;
     font-family: Mohave;
+    margin: 300px -30px;
 }
 
+.contact-us-button {
+    background: #f57e87;
+    color: white;
+    min-width: 200px;
+    font-family: Mohave;
+    margin: -150px -30px;
+}
+
+
 .btn-pink {
-    background: rgba(235, 137, 170, 0.979);
+    background: #f57e87;
     color: white;
 }
 
@@ -62,11 +78,24 @@ icon {
 }
 
 .bg-pink {
-    background:rgba(235, 137, 170, 0.979) !important;
+    background:#f57e87 !important;
 }
 
+.bg-black {
+    background:black;
+}
+
+
+.navbar-light {
+    background:#f57e87;
+
+
+}
+
+
 .dropdown-item:hover {
-    background: rgba(235, 137, 170, 0.979);
+    background:  #f57e87;
+
 
 /* -------------------------------- Media Queries */
 
@@ -90,4 +119,4 @@ icon {
     .header-container {
         padding-top: 164px;
     }
-}
+}}
