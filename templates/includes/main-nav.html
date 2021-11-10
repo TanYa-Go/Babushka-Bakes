@@ -17,9 +17,9 @@
                 Cakes
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="cakes-link">
-                <a href="" class="dropdown-item">Wedding Cakes</a>
-                <a href="" class="dropdown-item">Birthday Cakes</a>
-                <a href="" class="dropdown-item">All Cakes</a>
+                <a href="{% url 'products' %}?category=wedding_cakes" class="dropdown-item">Wedding Cakes</a>
+                <a href="{% url 'products' %}?category=birthday_cakes" class="dropdown-item">Birthday Cakes</a>
+                <a href="% url 'products' %}?category=wedding_cakes, birthday_cakes" class="dropdown-item">All Cakes</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Bread
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="bread-link">
-                <a href="" class="dropdown-item">Sourdough Bread</a>
-                <a href="" class="dropdown-item">Rye Bread</a>
-                <a href="" class="dropdown-item">All Breads</a>
+                <a href="{% url 'products' %}?category=sourdough_bread" class="dropdown-item">Sourdough Bread</a>
+                <a href="{% url 'products' %}?category=rye_bread" class="dropdown-item">Rye Bread</a>
+                <a href="{% url 'products' %}?category=sourdough_bread, rye_bread" class="dropdown-item">All Breads</a>
             </div>
         </li>
 
