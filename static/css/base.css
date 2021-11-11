@@ -110,6 +110,67 @@ icon {
 	background: white;
 	z-index: -1;
 }
+
+/*------ Footer ------*/
+
+footer {
+    background-color: black;
+    color: white;
+    min-height: 130px;
+    
+}
+
+.footer-link {
+    text-transform: uppercase;
+    display: block;
+    color: white;
+    padding: .2rem;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer-link-brand {
+    text-transform: none;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+.footer-row {
+    padding-top: 35px;
+    margin: 0;
+}
+
+.mb-7 {
+    margin-bottom: 7px;
+}
+
+.footer-social {
+    width: 27px;
+    display: inline-block;
+    font-size: 1.7rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.footer-social:hover {
+    border-bottom: 1px solid var(--color-white);
+}
+
+.fa-youtube-square:before,
+.fa-pinterest-p:before,
+.fa-instagram:before,
+.fa-facebook-f:before {
+    color: white;
+}
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
