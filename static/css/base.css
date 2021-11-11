@@ -26,6 +26,9 @@ icon {
     font-family: Mohave;
 }
 
+.message-font {
+    font-family: Dancing Script;
+}
 .menu-font {
     text-transform: uppercase;
     font-family: Mohave;
@@ -42,7 +45,8 @@ icon {
     color: white;
     min-width: 200px;
     font-family: Mohave;
-    margin: 300px -30px;
+    height: max-content;
+    
 }
 
 .contact-us-button {

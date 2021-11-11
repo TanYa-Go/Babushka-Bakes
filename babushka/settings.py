@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'home',
     'products',
     'cart',
+    'contact',
 ]
 
 MIDDLEWARE = [
@@ -165,3 +166,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 FREE_DELIVERY_THRESHOLD = 150
 STANDARD_DELIVERY_PERCENTAGE = 10
+
+
+
+
