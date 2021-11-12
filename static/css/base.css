@@ -82,7 +82,7 @@ icon {
 }
 
 .bg-pink {
-    background:#f57e87 !important;
+    background:#f57e87!important;
 }
 
 .bg-black {
@@ -95,7 +95,6 @@ icon {
 
 
 }
-
 
 .dropdown-item:hover {
     background:  #f57e87;
@@ -111,12 +110,40 @@ icon {
 	z-index: -1;
 }
 
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Mohave;
+}
+
+/*------ Contat Page ------*/
+
+.address-container {
+    margin-bottom: 80px;
+}
+
+.delivery-txt {
+    font-family: Mohave;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+
+#address-title {
+    color:#f57e87;
+}
+
+
 /*------ Footer ------*/
 
 footer {
-    background-color: black;
+    background-color: #78C2AD;
     color: white;
-    min-height: 130px;
+    min-height: 180px;
+    font-family: Mohave;
     
 }
 
@@ -129,11 +156,11 @@ footer {
 
 .footer-link:hover {
     text-decoration: underline;
-    color: white;
+    color: #f57e87;
 }
 
 .footer-link-brand {
-    text-transform: none;
+    text-transform: uppercase;
 }
 
 footer p {
@@ -162,7 +189,8 @@ footer p {
 }
 
 .footer-social:hover {
-    border-bottom: 1px solid var(--color-white);
+    border-bottom: 1px solid #f57e87;
+    
 }
 
 .fa-youtube-square:before,
@@ -171,6 +199,8 @@ footer p {
 .fa-facebook-f:before {
     color: white;
 }
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
