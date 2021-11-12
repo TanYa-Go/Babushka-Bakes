@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+
+<title>Babushka Bakes {% block extra_title %} - Blog {% endblock %}</title>
+
+{% block content %}
+
+<div class="overlay"></div>
+
+<div class="container mt-3">
+     <div class="row">
+        <div class="col">
+            <h1>Blog</h1>
+            <ul>
+            {% for post in object_list %}
+            <li><a href="{% url 'blog_details' post.pk %}">{{ post.title }}</a>- {{ post.author }}</li>
+            {{ post.image }}
+            {% endfor %}  
+            </ul>
+        </div>
+    </div>
+    <button class="btn btn-primary mb-3">
+        <a href="{% url 'add_post' %}" class="text-white">Add a Post</a>
+        </button>
+</div>
+{% include 'includes/footer.html' %}
+{% endblock %}
