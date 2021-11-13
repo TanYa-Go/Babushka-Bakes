@@ -13,7 +13,9 @@
             <h1>Blog</h1>
             <ul>
             {% for post in object_list %}
-            <li><a href="{% url 'blog_details' post.pk %}">{{ post.title }}</a>- {{ post.author }}</li>
+            <li><a href="{% url 'blog_details' post.pk %}">{{ post.title }}</a>- {{ post.author }} 
+                <a href="{% url 'edit_post' post.pk %}">Edit</a>
+                | <a href="{% url 'delete_post' post.pk %}">Delete</a></li>
             {{ post.image }}
             {% endfor %}  
             </ul>
