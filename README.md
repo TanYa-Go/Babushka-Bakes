@@ -116,13 +116,14 @@
  
 
 
-![Database Schema](static/images/database.png)
+![Database Schema](media/database-schema.png)
 
 
 ### **Wireframes**
 
-
-
+[Home Page](media/home.png)\
+[About Page](media/about.png)\
+[Shop Page](media/shop.png)
 
 ## **The Surface Plane**
 
