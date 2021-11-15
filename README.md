@@ -123,7 +123,13 @@
 
 [Home Page](media/home.png)\
 [About Page](media/about.png)\
-[Shop Page](media/shop.png)
+[Shop Page](media/shop.png)\
+[Product Page](media/product.png)\
+[Blog Page](media/blog.png)\
+[Blog Details Page](media/blog-details.png)
+
+
+
 
 ## **The Surface Plane**
 
