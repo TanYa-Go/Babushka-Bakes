@@ -126,7 +126,10 @@
 [Shop Page](media/shop.png)\
 [Product Page](media/product.png)\
 [Blog Page](media/blog.png)\
-[Blog Details Page](media/blog-details.png)
+[Blog Details Page](media/blog-details.png)\
+[Contact Page](media/contact.png)
+
+
 
 
 
