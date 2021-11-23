@@ -18,9 +18,6 @@ She wanted a website that will showcase her work, keep in contact with her custo
     * [User Goals](#user-goals)
     * [Site Owners Goals](#site-owners-goals)
     * [User Stories](#user-stories)
-       * [Recruiters and Employers](#recruiters-and-employers)
-        * [Other Developers](#other-developers)
-        * [Potential Clients](#potential-clients)
 * [The Scope Plane](#the-scope-plane)
     * [Existing Features](#existing-features)
     * [Features to be implemented](#features-to-be-implemented)
@@ -145,8 +142,25 @@ She wanted a website that will showcase her work, keep in contact with her custo
 
 ## **The Structure Plane**
 
+All the pages will have the same heading that will contain the logo, main navigation menu, the search bar, the account login and the shopping cart. 
 
+#### **Home Page**
 
+Home page will have a nice hero image that should tempt the visitor to explore futher
+#### **About Page**
+
+About page is here to tell the story of Babushka Bakes and its owner, Petra. It will contain her short biography and images.
+#### **Shop Page**
+
+Will contain the list of all the products available in the shop along with the prices. 
+
+#### **Blog Page**
+
+This page will have the list of blog posts from the owner. Each post will contain of the image, title and subtitle and it will be clickable so the visitor can open the article to read it on a separate page. 
+
+#### **Contact Page**
+
+The contact page will have the contact from where visitors can easily contact the site owner. This form will be sending emails directyl to site owners inbox. There will also be a map and address for the Bakery.  
 ## **The Skeleton Plane**
 <a></a>
 
