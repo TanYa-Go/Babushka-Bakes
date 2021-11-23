@@ -24,7 +24,6 @@ She wanted a website that will showcase her work, keep in contact with her custo
 * [The Structure Plane](#the-structure-plane)
 * [The Skeleton Plane](#the-skeleton-plane)
     * [Wireframes](#wireframes)
-    * [Flowcharts](#flowcharts)
     * [Database Structure](#database-structure)
 * [The Surface Plane](#the-surface-plane)
     * [Design Choices](#design-choices)
