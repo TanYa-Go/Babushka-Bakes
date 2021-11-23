@@ -1,12 +1,16 @@
 # **Testing**
 
-# Table of contents 
+## Table of contents 
 * [Code Validation](#code-validation)
 * [Responsiveness](#responsiveness)
 * [User Stories](#user-stories)
-* [My Profile](#my-profile)
-* [Navigation](#navigation)
-* [Footer](#footer)
+* [Functionality](#functionality)
+    * [My Profile](#my-profile)
+    * [Shop](#shop)
+    * [Navigation](#navigation)
+    * [Footer](#footer)
+    * [Search](#search)
+    * [Blog](#blog)
 
 
 <br/>
@@ -34,7 +38,6 @@ The page looks good on all tested devices and its fully responsive. The Navigati
 Test result is satisfactory, everything is functioning as intended.
 
 
-
+## **User Stories**
 ## **Functionality**
 
-## **User Stories**
