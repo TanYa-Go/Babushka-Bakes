@@ -10,7 +10,7 @@ body {
     height: calc(100vh - 164px);
     color: #555;
     font-family: Mohave;
-    
+
 }
 
 icon {
@@ -29,6 +29,7 @@ icon {
 .message-font {
     font-family: Dancing Script;
 }
+
 .menu-font {
     text-transform: uppercase;
     font-family: Mohave;
@@ -46,7 +47,7 @@ icon {
     min-width: 200px;
     font-family: Mohave;
     height: max-content;
-    
+
 }
 
 .contact-us-button {
@@ -82,35 +83,35 @@ icon {
 }
 
 .bg-pink {
-    background:#f57e87!important;
+    background: #f57e87 !important;
 }
 
 .bg-black {
-    background:black;
+    background: black;
 }
 
 
 .navbar-light {
-    background:#f57e87;
+    background: #f57e87;
 
 
 }
 
 .dropdown-item:hover {
-    background:  #f57e87;
+    background: #f57e87;
 }
 
 .overlay {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: fixed;
-	background: white;
-	z-index: -1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
-h1, 
+h1,
 h2,
 h3,
 h4,
@@ -118,6 +119,34 @@ h5,
 h6 {
     font-family: Mohave;
 }
+
+
+
+/*------ Blog Page ------*/
+
+.h-rule {
+    width: 50%;
+}
+
+.card {
+    border: 3px solid #f57e87;
+}
+
+.card-img-top {
+    padding-top: 15px;
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 2rem 2rem;
+
+}
+
 
 /*------ Contat Page ------*/
 
@@ -133,7 +162,7 @@ h6 {
 
 
 #address-title {
-    color:#f57e87;
+    color: #f57e87;
 }
 
 
@@ -144,7 +173,7 @@ footer {
     color: white;
     min-height: 180px;
     font-family: Mohave;
-    
+
 }
 
 .footer-link {
@@ -190,7 +219,7 @@ footer p {
 
 .footer-social:hover {
     border-bottom: 1px solid #f57e87;
-    
+
 }
 
 .fa-youtube-square:before,
@@ -201,13 +230,15 @@ footer p {
 }
 
 
+
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
+    .container {
+        max-width: 80%;
+    }
 }
 
 /* fixed top navbar only on medium and up */
@@ -223,4 +254,4 @@ footer p {
     .header-container {
         padding-top: 164px;
     }
-}}
+}

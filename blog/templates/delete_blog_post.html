@@ -1,23 +1,26 @@
 {% extends 'base.html' %}
 
 
-<title>{% block extra_title %} Delete Blog Post  {% endblock %}</title>
+<title>{% block extra_title %} Delete Blog Post {% endblock %}</title>
 
 {% block content %}
 
 <div class="overlay"></div>
 <div class="container mt-3">
     <div class="row">
-        <div class="col-12 col-md-6">
-            <h1>Delete Post : {{ post.title }}</h1>
+        <div class="col-12 ">
+            <br>
+            <h1>Delete Post : </h1><br>
+            <h2>{{ post.title }}</h2><br>
+            <img src="{{ MEDIA_URL }}{{ post.image }}" alt=""><br><br>
             <form action="" method="post">
                 {% csrf_token %}
-                <button class="btn btn-primary">Delete Post</button>
+                <button class="btn btn-primary mt-4">Delete Post</button>
             </form>
             <br>
         </div>
     </div>
-    <a href="{% url 'blog' %}" class="btn btn-secondary">Back</a>
+    <a href="{% url 'blog' %}" class="btn btn-secondary mb-4"> Go Back</a>
 </div>
 
 {% include 'includes/footer.html' %}

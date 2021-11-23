@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 
-<title>{% block extra_title %} Edit Blog Post  {% endblock %}</title>
+<title>{% block extra_title %} Edit Blog Post {% endblock %}</title>
 
 {% block content %}
 
@@ -9,16 +9,16 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-12 col-md-6">
-            <h1>Update Post</h1>
+            <h1 class="mt-4 mb-4">Update Post</h1>
             <form action="" method="post">
                 {% csrf_token %}
                 {{ form.as_p }}
-                <button class="btn btn-primary">Update</button>
+                <button class="btn btn-primary mt-3">Update</button>
             </form>
             <br>
         </div>
     </div>
-    <a href="{% url 'blog' %}" class="btn btn-secondary">Back</a>
+    <a href="{% url 'blog' %}" class="btn btn-secondary mb-4">Go Back</a>
 </div>
 
 {% include 'includes/footer.html' %}

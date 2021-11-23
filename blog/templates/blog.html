@@ -6,24 +6,53 @@
 {% block content %}
 
 <div class="overlay"></div>
-
-<div class="container mt-3">
-     <div class="row">
-        <div class="col">
-            <h1>Blog</h1>
-            <ul>
-            {% for post in object_list %}
-            <li><a href="{% url 'blog_details' post.pk %}">{{ post.title }}</a>- {{ post.author }} 
-                <a href="{% url 'edit_post' post.pk %}">Edit</a>
-                | <a href="{% url 'delete_post' post.pk %}">Delete</a></li>
-            {{ post.image }}
-            {% endfor %}  
-            </ul>
+<div class="col-12 text-center">
+    <h1 class="mt-4">Get inspired... </h1>
+    <br>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-9 offset-md-2 text-center">
+            <h5>Im not going to give away all of my secrets :) but as I do like to share my knowledge and help other
+                aspiring chefs,
+                <br>here I will share some of the recipes I absolutely love and I hope you will too.
+            </h5>
         </div>
     </div>
-    <button class="btn btn-primary mb-3">
-        <a href="{% url 'add_post' %}" class="text-white">Add a Post</a>
-        </button>
+
+    <hr class="h-rule">
+    <div class="row">
+        <div class="col-12 text-center">
+            <button class="btn btn-secondary mt-3">
+                <a href="{% url 'add_post' %}" class="text-white"><i class="fas fa-plus"></i>
+                    Add New Post</a>
+            </button>
+        </div>
+    </div>
 </div>
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-sm-12 col-md-8 offset-md-2">
+            {% for post in object_list %}
+            <div class="card mb-3">
+                <a href="#!"><img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image }}" alt="..." width="100%"
+                        height="auto" /></a>
+                <div class="card-body">
+                    <h2 class="card-title h4"><a href="{% url 'blog_details' post.pk %}" class="text-dark">{{ post.title
+                            }}</a></h2>
+                    <div class="small text-muted">by {{ post.author }}</div> <a
+                        href="{% url 'edit_post' post.pk %}">Edit</a>
+                    | <a href="{% url 'delete_post' post.pk %}">Delete</a><br>
+                    <p class="card-text">{{ post.subtitle }}</p>
+                    <a class="btn btn-primary" href="{% url 'blog_details' post.pk %}">Read more →</a>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
 {% include 'includes/footer.html' %}
 {% endblock %}
