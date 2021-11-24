@@ -58,6 +58,11 @@ icon {
     margin: -150px -30px;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important;
+    border: 1px solid black;
+}
 
 .btn-pink {
     background: #f57e87;
