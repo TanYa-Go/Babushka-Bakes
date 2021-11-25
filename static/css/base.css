@@ -125,7 +125,11 @@ h6 {
     font-family: Mohave;
 }
 
-
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
 
 /*------ Blog Page ------*/
 
