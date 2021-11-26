@@ -148,6 +148,12 @@ h6 {
     height: 2px;
 }
 
+.cart-notification-wrapper {
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /*------ Blog Page ------*/
 
 .h-rule {
