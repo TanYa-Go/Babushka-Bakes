@@ -41,7 +41,7 @@
                                         <p class="my-0">${{ item.product.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
-                                        <form class="form update-form" method="POST" action="{% 'url adjust_cart item.item_id' %">
+                                        <form class="form update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                             {% csrf_token %}
                                             <div class="form-group ">
                                                 <div class="input-group">
@@ -50,7 +50,7 @@
                                             </div>
                                         </form>
                                         <a class="update-link text-info"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" ><small>Remove</small></a>
+                                        <a href="{% url 'remove_from_cart' item.item_id  %}" class="remove-item text-danger float-right" id="remove_{{ item.item_id }}" ><small>Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
