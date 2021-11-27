@@ -1,72 +1,45 @@
-<footer>
-    <div id="footer">
-        <div class="container-fluid">
-            <div class="container">
-                <div class="row footer-row">
-                    <!-- <div class="col-sm-12 col-md-4 col-lg-3 no-padding  mt-2">
-                        <h3 class="footer">Babushka Bakes</h3>
-                    </div> -->
-                    <div class="col-sm-12 col-md-4 col-lg-4 no-padding">
-                        
-                        <h6> </h6>
-                    </div>
-                    <div class="col-sm-12 col-md-4 col-lg-4 no-padding order-md-3 order-lg-2">
-                        <div class="social-media">
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com" class="some-link" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </div>
-                            <div class="footer-social">
-                                <a href="https://www.instagram.com" class="some-link" target="_blank">
-                                    <i class="fab fa-instagram fa-lg"></i>
-                                </a>
-                            </div>
-                            <div class="footer-social">
-                                <a href="https://www.pinterest.com" class="some-link" target="_blank">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                            </div>
-                            <div class="footer-social">
-                                <a href="https://www.youtube.com" class="some-link" target="_blank">
-                                    <i class="fab fa-youtube-square"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- <a href="{% url 'products' %}" class="footer-link">Shop</a>
-                        <a href="" class="footer-link">Blog</a>
-                        <a href="{% url 'contact' %}" class="footer-link mb-15-mob">Contact</a>
-                    </div> 
-                    <div class="col-sm-12 col-md-6 col-lg-3 no-padding order-md-4 order-lg-4">-->
-                        
-                        <!-- <div class="social-media">
-                            <div class="footer-social">
-                                <a href="https://www.facebook.com" class="some-link" target="_blank">
-                                    <i class="fab fa-facebook-f"></i>
-                                </a>
-                            </div>
-                            <div class="footer-social">
-                                <a href="https://www.instagram.com" class="some-link" target="_blank">
-                                    <i class="fab fa-instagram fa-lg"></i>
-                                </a>
-                            </div>
-                            <div class="footer-social">
-                                <a href="https://www.pinterest.com" class="some-link" target="_blank">
-                                    <i class="fab fa-pinterest-p"></i>
-                                </a>
-                            </div>
-                            <div class="footer-social">
-                                <a href="https://www.youtube.com" class="some-link" target="_blank">
-                                    <i class="fab fa-youtube-square"></i>
-                                </a>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="footer-line">
-                </div>
-            </div>
+<footer class="container-fluid mt-4">
+    <div class="row text-center">
+        <div class="col-12 mt-4 mb-3">
+            <h2>Babushka Bakes</h2>
         </div>
     </div>
+    <div class="row">
+            <div class="col-12 col-md-4"></div>
+            <div class="col-12 col-md-4 text-center display-5">
+                <a href="{% url 'home' %}" class="footer-link">Home</a>
+                <a href="{% url 'products' %}" class="footer-link ml-4">Shop</a>
+                <a href="{% url 'blog' %}" class="footer-link ml-4">Blog</a>
+                <a href="{% url 'contact' %}" class="footer-link mb-15-mob ml-4">Contact</a>
+            </div>
+            <div class="col-12 col-md-4"> </div>
+     </div>
+     <hr>
+     <div class="row">
+        <div class="col-12 col-md-4"></div>
+        <div class="col-12 col-md-4 text-center display-5">
+            <a href="https://www.facebook.com" class="social-media ml-3" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com" class="social-media ml-3" target="_blank">
+                <i class="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="https://www.pinterest.com" class="social-media ml-3" target="_blank">
+                <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="https://www.youtube.com" class="social-media ml-3" target="_blank">
+                <i class="fab fa-youtube-square"></i>
+            </a>
+        </div>
+        <div class="col-12 col-md-4"> </div>
+ </div>
+   
+    <div class="row text-center">
+        <div class="col-12">
+            <p class="mt-4">Copyright &copy;<script>document.write(new Date().getFullYear());</script> 
+                 | Made with <i class="fas fa-heart" aria-hidden="true"></i> 
+                by <a href="https://github.com/TanYa-Go" class="text-dark" target="_blank">Tanya-Go</a></p>
+        </div>
+    </div>
+    
 </footer>

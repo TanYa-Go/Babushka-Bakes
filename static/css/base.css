@@ -55,11 +55,12 @@ icon {
 }
 
 .contact-us-button {
-    background: #f57e87;
+    background: #78C2AD;
     color: white;
     min-width: 200px;
     font-family: Mohave;
-    margin: -150px -30px;
+    height: max-content;
+    
 }
 
 .btn-outline-black {
@@ -71,11 +72,12 @@ icon {
 .btn-pink {
     background: #f57e87;
     color: white;
+    border-radius: 5px;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+/* .shop-now-button:hover, */
+/* .shop-now-button:active, */
+/* .shop-now-button:focus, */
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -116,7 +118,7 @@ icon {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: #fafafa;
     z-index: -1;
 }
 
@@ -207,16 +209,18 @@ h6 {
 footer {
     background-color: #78C2AD;
     color: white;
-    min-height: 180px;
+    min-height: 300px;
     font-family: Mohave;
+    padding: 30px 100px 10px 100px;
 
 }
 
 .footer-link {
     text-transform: uppercase;
-    display: block;
+    display: inline;
     color: white;
     padding: .2rem;
+    font-size: 1.2rem;
 }
 
 .footer-link:hover {
@@ -248,9 +252,17 @@ footer p {
 }
 
 .social-media {
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     margin-top: 15px;
+}
+
+.fa-facebook-f:before,
+.fa-instagram:before,
+.fa-pinterest-p:before,
+.fa-youtube-square:before {
+    color: #f57e87;
+    text-shadow: 1px 1px black;
 }
 
 .footer-social:hover {
@@ -258,12 +270,12 @@ footer p {
 
 }
 
-.fa-youtube-square:before,
+/* .fa-youtube-square:before,
 .fa-pinterest-p:before,
 .fa-instagram:before,
 .fa-facebook-f:before {
     color: white;
-}
+} */
 
 
 
@@ -292,4 +304,16 @@ footer p {
     }
 
     
+}
+
+
+@media (min-width: 320px) and (max-width: 991px)  {
+    .shop-now-button {
+        margin-top: 100px;
+    }
+
+    .contact-us-button {
+        margin-top: 10px;
+       
+    }
 }
