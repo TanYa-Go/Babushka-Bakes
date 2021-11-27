@@ -21,6 +21,10 @@ icon {
     width: 1.5rem;
 }
 
+.navbar {
+    font-family: Mohave;
+}
+
 .logo-font {
     text-transform: uppercase;
     font-family: Mohave;
@@ -286,4 +290,6 @@ footer p {
     .header-container {
         padding-top: 164px;
     }
+
+    
 }
