@@ -56,7 +56,7 @@ def checkout(request):
                         "Please call us for assistance!")
                     )
                     order.delete()
-                    return redirect(reverse('cart'))
+                    return redirect(reverse('view_cart'))
 
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse('checkout_success', args=[order.order_number]))
@@ -66,7 +66,7 @@ def checkout(request):
     else:
         cart = request.session.get('cart', {})
         if not cart:
-            messages.error(request, "There's nothing in your cart at the moment")
+            messages.error(request, "There's nothing in your cartat the moment")
             return redirect(reverse('products'))
 
         current_cart = cart_contents(request)

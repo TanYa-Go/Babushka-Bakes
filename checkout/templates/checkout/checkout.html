@@ -21,13 +21,13 @@
             <p class="text-muted">Order Summary: </p>
             <div class="row">
                 <div class="col-4 offset-3">
-                    <p class="mb-1 mt-0 small text-muted">Item</p>
+                    <p class="mb-2 mt-0 small text-muted">Item</p>
                 </div>
                 <div class="col-2 ">
-                    <p class="mb-1 mt-0 small text-muted">Quantity</p>
+                    <p class="mb-2 mt-0 small text-muted">Quantity</p>
                 </div>
                 <div class="col-2">
-                    <p class="mb-1 mt-0 small text-muted">Subtotal</p>
+                    <p class="mb-2 mt-0 small text-muted">Subtotal</p>
                 </div>
                 
             </div>
@@ -40,9 +40,12 @@
                             {% else %}
                             <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                             {% endif %}
+                        </a>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4">
+                        <a href="{% url 'product_details' item.product.id %}">
                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                    </a>
                     </div>
                     <div class="col-2">
                         <p class="my-0 small text-muted">{{ item.quantity }}</p>
@@ -51,6 +54,7 @@
                         <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                     </div>
                 </div>
+            
             {% endfor %}
 
             <hr class="my-0">
@@ -134,6 +138,13 @@
         </div>
     </div>
 </div>
+<div id="loading-overlay">
+    <h1 class="text-light logo-font loading-spinner">
+        <span class="icon">
+            <i class="fas fa-3x fa-sync-alt fa-spin"></i>
+        </span>
+    </h1>
+</div>
 
 {% include 'includes/footer.html' %}
 {% endblock %}
@@ -141,6 +152,6 @@
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}
-    {{ stripe_public_key|json_script:"id_client_secret" }}
+    {{ client_secret|json_script:"id_client_secret" }}
     <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
