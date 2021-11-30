@@ -6,13 +6,7 @@
 <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
 {% endblock %}
 
-{% block page_header %}
-    <div class="container header-container">
-        <div class="row">
-            <div class="col"></div>
-        </div>
-    </div>
-{% endblock %}
+
 
 {% block content %}
 <div class="overlay"></div>
@@ -22,7 +16,9 @@
             <h2 class="logo-font  text-center">My profile</h2>
             <hr>
         </div>
+        {{ profile }}
     </div>
+</div>
 
   
 
