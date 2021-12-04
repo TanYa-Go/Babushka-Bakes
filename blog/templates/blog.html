@@ -23,10 +23,12 @@
     <hr class="h-rule">
     <div class="row">
         <div class="col-12 text-center">
+            {% if request.user.is_superuser %}
             <button class="btn btn-secondary mt-3">
                 <a href="{% url 'add_post' %}" class="text-white"><i class="fas fa-plus"></i>
                     Add New Post</a>
             </button>
+            {% endif %}
         </div>
     </div>
 </div>
@@ -40,9 +42,12 @@
                         height="auto" /></a>
                 <div class="card-body">
                     <h2 class="card-title h4"><a href="{% url 'blog_details' post.pk %}" class="text-dark">{{ post.title }}</a></h2>
-                    <div class="small text-muted">by {{ post.author }}</div> <a
+                    <div class="small text-muted">by {{ post.author }}</div> 
+                    {% if request.user.is_superuser %}
+                    <a
                         href="{% url 'edit_post' post.pk %}">Edit</a>
                     | <a href="{% url 'delete_post' post.pk %}">Delete</a><br>
+                    {% endif %}
                     <p class="card-text">{{ post.subtitle }}</p>
                     <a class="btn btn-primary" href="{% url 'blog_details' post.pk %}">Read more →</a>
                 </div>
