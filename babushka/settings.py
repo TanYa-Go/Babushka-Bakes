@@ -16,6 +16,9 @@ import dj_database_url
 
 if os.path.exists("env.py"):
     import env
+    DEBUG = True
+else:
+    DEBUG = False
     
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -28,9 +31,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-8t=lpwevl4o&b&ga2zjl=-ss-v*2f4h0)(e3e!#$0ye_r_70!3'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ['babushka.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['babushka-bakes.herokuapp.com', 'localhost']
 
 
 # Application definition
