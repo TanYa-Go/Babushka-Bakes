@@ -1,1 +1,1 @@
-web: gunicorn babushka-bakes.wsgi:application
+web: gunicorn babushka_bakes.wsgi:application
