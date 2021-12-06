@@ -3,7 +3,7 @@
 ![Mock up Image](static/images/mockup.png)
 
 
-## **Babushka Bakes**
+## **About the project**
 
 Babushka Bakes is a lovely small bakery run by the pastry chef Petra Dragojlovic. The two big passions of hers are making cakes for any occasion and making different kinds of bread. She can make all your other pastry wishes come through but these are her two true loves.
 She wanted a website that will showcase her work, keep in contact with her customers, and where she will also be able to receive orders. I created a site where she can communicate any news about her products and share some of her famous recipes through the blog. Then there is a shop where customers can order some of the staples from her kitchen, and through the contact form people can contact her for any questions or orders they wish to place.
