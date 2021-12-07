@@ -5,8 +5,8 @@
 
 ## **About the project**
 
-Babushka Bakes is a lovely small bakery run by the pastry chef Petra Dragojlovic. The two big passions of hers are making cakes for any occasion and making different kinds of bread. She can make all your other pastry wishes come through but these are her two true loves.
-She wanted a website that will showcase her work, keep in contact with her customers, and where she will also be able to receive orders. I created a site where she can communicate any news about her products and share some of her famous recipes through the blog. Then there is a shop where customers can order some of the staples from her kitchen, and through the contact form people can contact her for any questions or orders they wish to place.
+Babushka Bakes is a lovely small bakery run by the pastry chef Petra Dragojlovic. She specializes in making cakes and different kinds of bread. She wanted a website that will showcase her work and where she can keep in contact with her customers. As this is her business, she wanted to be able to offer some products for sale in the online shop but also have an option for people to contact her for
+custom orders. I created a site that contains a blog - where she can communicate any news about her products and share some of her famous recipes, then there is a shop - where customers can order some of the staples from her kitchen, and through the contact form - people can contact her for any questions or orders they wish to place.
 
 [View Live Site]()
 
@@ -57,7 +57,7 @@ She wanted a website that will showcase her work, keep in contact with her custo
 
 * #### **Site Visitor / Shopper**
 
-   Site visior/shopper's goal is to be able to easily browse the website on any device so that they can quickly find what they  are   looking for. Whether that is to buy products or just find some inspiration for their own baking. The easier is to find the contact information to contact the site owner, the better experience they will have. They need to clearly see what is the benefit of signing up for the account and what benefits will that bring them. 
+   Site visior/shopper's goal is to be able to easily browse the website on any device so that they can quickly find what they are   looking for. Whether that is to buy products or just find some inspiration for their own baking. The easier is to find the contact information to contact the site owner, the better experience they will have. They need to clearly see what is the benefit of signing up for the account and what benefits will that bring them. 
 
 * #### **Staff**
 
@@ -159,7 +159,7 @@ This page will have the list of blog posts from the owner. Each post will contai
 
 #### **Contact Page**
 
-The contact page will have the contact from where visitors can easily contact the site owner. This form will be sending emails directyl to site owners inbox. There will also be a map and address for the Bakery.  
+The contact page will have the contact from where visitors can easily contact the site owner. This form will be sending emails directly to site owners inbox. There will also be a map and address for the Bakery.  
 ## **The Skeleton Plane**
 <a></a>
 
@@ -207,6 +207,7 @@ I wanted the website to have a warm feel to it and to invoke feelings of happine
 
 Apart from looking like a happy place, I wanted the website to also have an elegant feel to it so I have chosen the Mohave font for the majority of the webiste.
 
+Messages from the site owner are written in Dancing Script fornt to feel more personal, as if she wrote them by hand. 
 
 <a></a>
 
@@ -260,6 +261,7 @@ Apart from looking like a happy place, I wanted the website to also have an eleg
 
 The full testing procedure can be found in the [Testing](testing.md) file
 
+## **Bugs**
 
 [Back to Top](#table-of-contents)
 
@@ -267,11 +269,177 @@ The full testing procedure can be found in the [Testing](testing.md) file
 
 # **Deployment**
 
+## Run Locally
+
+To run this project locally on your machine you will need to clone it first. Please follow the steps:
+
+1. From the application's repository, click the "code" button and download the zip of the repository.
+    Alternatively, you can clone the repository using the following line in your terminal:
+
+    ``` 
+    git clone https://github.com/TanYa-Go/Babushka-Bakes.git
+    ``` 
+
+1. Access the folder in your terminal window and install the application's [link to required modules](https://github.com/TanYa-Go/Babushka-Bakes/blob/main/requirements.txt) using the following command:
+
+    ```
+    pip3 install -r requirements.txt
+    ```
+
+1. In your IDE, create a file containing your environmental variables called env.py at the root level of the application. 
+    It will need to contain the following lines and variables:
+    ```
+    import os
+
+    os.environ["SECRET_KEY"] = "YOUR_SECRET_KEY"
+    os.environ["DEVELOPMENT"] = "True"
+
+    os.environ["DEFAULT_FROM_EMAIL"] = 'DEFAULT_FROM_EMAIL'
+
+    os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE_PUBLIC_KEY"
+    os.environ["STRIPE_SECRET_KEY"] = "STRIPE_SECRET_KEY"
+    os.environ["STRIPE_WH_SECRET"] = "STRIPE_WH_SECRET"
+    os.environ["STRIPE_CURRENCY"] = "USD"
+
+    ```
+    
+    To get the above variables you will need to create a Strip account. Please visit the [Stripe Documentation](https://stripe.com/docs) for more information.
+
+    If you plan on pushing this application to a public repository, ensure that env.py is added to your .gitignore file.
+
+1. Migrate the database models with the following command
+    ```
+    python3 manage.py migrate
+    ```
+1. Create a superuser and set up the credentials with the following command
+    ```
+    python3 manage.py createsuperuser
+    ```
+1. Run the app with the following command
+    ```
+    python manage.py runserver
+    ```
+    The address to access the website is displayed in the terminal  
+    Add **"/admin"** to the end of the url to access the admin panel. You need to log in with your superuser credentials
+
 ## Heroku Deployment
 
+1. Login to your Heroku account and create a new app. Choose your region. 
+1. Once the app is created click on the resources button and under Add-ons, look for the Heroku Postgres to attach a postgres database to your project.
+    Select the Hobby Dev - Free plan and click 'Submit order form'
+
+1. Scroll back up and click "settings". Scroll down and click "Reveal config vars". Set up the same variables as in your env.py ():
+    !You shouldn't set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website. 
+
+    ```
+    AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
+    AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
+    AWS_S3_REGION_NAME = "AWS_S3_REGION_NAME"
+    AWS_STORAGE_BUCKET_NAME = "AWS_STORAGE_BUCKET_NAME"
+    USE_AWS = True
+    AWS_S3_ADDRESSING_STYLE = "path" - **this setting is specific to the 'eu-central-1' region**
+    DATABASE_URL = "This variable is automatically set when adding the Postgres Add on"
+
+    SECRET_KEY = "SECRET_KEY"
+
+    STRIPE_PUBLIC_KEY = "STRIPE_PUBLIC_KEY"
+    STRIPE_SECRET_KEY = "STRIPE_SECRET_KEY"
+    STRIPE_WH_SECRET = "STRIPE_WH_SECRET"
+    STRIPE_CURRENCY = USD
+
+    DEFAULT_FROM_EMAIL = "DEFAULT_FROM_EMAIL"
+    EMAIL_HOST = "smtp.gmail.com"
+    EMAIL_HOST_PASS = "EMAIL_HOST_PASS"
+    EMAIL_HOST_USER = "EMAIL_HOST_USER"
+    EMAIL_PORT = 587
+    EMAIL_USE_TLS = True
+    ```
+1. From this screen, copy the value of DATABASE_URL
+1. After this go to your settings.py file and comment out the default database configuration and add:
+    ```
+    DATABASES = {
+        'default': dj_database_url.parse('Put your DATABASE_URL here'))
+    }
+    ```
+1. Migrate again with the following command
+    ```
+    python3 manage.py migrate
+    ```
 
 
-## Run Locally
+1. Create a superuser for the postgres database so you can have access to the django admin by setting up the credentials with the following command
+    ```
+    python3 manage.py createsuperuser
+    ```
+
+    Login to the admin panel and mark your email address as verified, check the boxes 'Verified and primary"
+
+1. Load the data into your newly created database by using the following command: 
+
+    ```
+    python3 manage.py loaddata <name of file containing the data >
+    ``` 
+
+1. After migrations are complete, change database configurations to:
+```
+    if 'DATABASE_URL' in os.environ:
+        DATABASES = {
+            'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+        }
+    else:
+        DATABASES = {
+            'default': {
+                'ENGINE': 'django.db.backends.sqlite3',
+                'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+            }
+        }
+```
+This set up will allow your site to use Postgres in deployment and sqlite3 in development.
+
+
+1. Make sure you have your requirements.txt file and your Procfile. In case you don't, follow the below steps:
+    Requirements:
+    ```
+    pip3 freeze --local > requirements.txt
+    ```
+    Procfile:
+    ```
+    echo web: python app.py > Procfile
+    ```
+1. The Procfile should contain the following line:
+    ```
+    web: gunicorn <project_name>.wsgi:application
+
+     ** Make sure there is a space after the colon, otherwise it will not work. 
+
+    ```
+
+1. Add your files and commit them to GITHUB by running the following commands:
+    ```
+    git add . 
+    git commit -m "Your commit message"
+    git push
+    ```
+
+1. Add your Heroku app URL to ALLOWED_HOSTS in your settings.py file
+1. Disable collect static so that Heroku doesn't try to collect static files when you deploy by typing the following command in the terminal
+    ```
+    heroku config:set DISABLE_COLLECTSTATIC=1
+    ```
+1. Go back to HEROKU and click "Deploy" in the navigation. 
+1. Scroll down to Deployment method and Select Github. 
+1. Look for your repository and click connect. 
+1. Under automatic deploys, click 'Enable automatic deploys'
+
+1. Just beneath, click "Deploy branch". Heroku will now start building the app. When the build is complete, click "view app" to open it.
+1. In order to commit your changes to the branch, use git push to push your changes. 
+
+
+1. Static and media files  for this project are stored in an AWS S3 bucket. You can find more information about this on [Amazon S3 Documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html).
+   
+
+
+
 
 
 
