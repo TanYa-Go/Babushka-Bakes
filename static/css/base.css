@@ -185,6 +185,16 @@ h6 {
 
 }
 
+.blog-subtitle {
+    font-family: Dancing Script;
+}
+
+.delete {
+   color: #f57e87;
+}
+
+
+
 
 /*------ Contat Page ------*/
 
@@ -271,6 +281,15 @@ footer p {
 }
 
 
+.login-subtitle {
+   margin-top: -100px;
+}
+
+.reset {
+    background-color: #f57e87 !important;
+    border-radius: 5px !important;
+    border: none !important;
+}
 
 
 /* -------------------------------- Media Queries */

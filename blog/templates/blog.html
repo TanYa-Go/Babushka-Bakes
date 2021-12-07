@@ -12,11 +12,10 @@
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-9 offset-md-2 text-center">
-            <h5>Im not going to give away all of my secrets :) but as I do like to share my knowledge and help other
-                aspiring chefs,
-                <br>here I will share some of the recipes I absolutely love and I hope you will too.
-            </h5>
+        <div class="col-12 col-md-9 offset-md-2 text-center ">
+            <h3 class="blog-subtitle">Im not going to give away all of my secrets but I like to share my knowledge and help other
+                aspiring pastry chefs, so here I will share some of the recipes I absolutely love, and I hope you will too.
+            </h3>
         </div>
     </div>
 
@@ -44,9 +43,8 @@
                     <h2 class="card-title h4"><a href="{% url 'blog_details' post.pk %}" class="text-dark">{{ post.title }}</a></h2>
                     <div class="small text-muted">by {{ post.author }}</div> 
                     {% if request.user.is_superuser %}
-                    <a
-                        href="{% url 'edit_post' post.pk %}">Edit</a>
-                    | <a href="{% url 'delete_post' post.pk %}">Delete</a><br>
+                    <a href="{% url 'edit_post' post.pk %}">Edit</a>
+                    | <a href="{% url 'delete_post' post.pk %}" class="delete">Delete</a><br>
                     {% endif %}
                     <p class="card-text">{{ post.subtitle }}</p>
                     <a class="btn btn-primary" href="{% url 'blog_details' post.pk %}">Read more →</a>
