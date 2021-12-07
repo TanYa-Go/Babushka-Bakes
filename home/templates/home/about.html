@@ -1,8 +1,76 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 {% load static %}
 
 {% block content %}
+<div class="overlay"></div>
+<div class="container mt-4 p-0">
+    <div class="row">
+        <div class="col-12 text-center mt-4">
+            <h2 class="logo-font">About Me</h2>
+            <hr class="w-50 mb-3">
+            <h3 class="message-font mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati 
+                consectetur ratione minus culpa perspiciatis iste atque et pariatur ut ullam temporibus accusantium
+                aliquam vel minima, nihil illo! Expedita, iusto.
+            </h3>
+           
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <img src="{{ MEDIA_URL }}chef.jpg" alt="chef Petra">
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ MEDIA_URL }}chef.jpg" alt="chef Petra">
+         </div>
+         <div class="col-12 col-md-4">
+            <img src="{{ MEDIA_URL }}chef.jpg" alt="chef Petra">
+         </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="delivery-txt text-justify p-4">
+                <hr class="w-50 mb-3">
+                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque eligendi dolore ullam expedita
+                     sint odio eius numquam placeat illo esse, minus provident quo aspernatur assumenda blanditiis 
+                     iure iusto consectetur tempora nihil tenetur. Accusamus ad ipsa, tempora praesentium eligendi 
+                     aut sed, doloremque, obcaecati expedita cumque facere ut nihil necessitatibus velit! 
+                     Perspiciatis est porro et soluta, laboriosam dolores facilis! Debitis fuga, enim dignissimos 
+                     libero omnis unde? Sequi aliquam quos saepe nihil, laudantium totam, tempore qui voluptatum, 
+                     quae mollitia repellat? Assumenda, exercitationem voluptas dignissimos molestiae sunt minima 
+                     enim repudiandae labore ipsam? Animi dicta nulla ipsam fugit beatae sit, itaque officia repellat 
+                     quia aliquam.
+                </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container ">
+    <div class="row mt-4">
+        <div class="col-12 col-md-4">
+            <img src="{{ MEDIA_URL }}pexels-daria-shevtsova-1070850.jpg" alt="chef Petra">
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ MEDIA_URL }}pexels-daria-shevtsova-1070850.jpg" alt="chef Petra">        
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="{{ MEDIA_URL }}pexels-daria-shevtsova-1070850.jpg" alt="chef Petra">        
+        </div>
+    </div>
+</div>
+<hr class="w-50 mb-3">
+<h3 class="text-center mt-3 blog-subtitle">Wanna try some of my best selling cakes?</h3>
+<p class="text-center mb-4">
+    <button type="button" class="btn btn-secondary mt-2 ml-auto mb-4">
+        <a href="{% url 'products' %}" class="text-white">Browse Shop</a>
+        </button>
+</p>
 
 {% include 'includes/footer.html' %}
 {% endblock %}
