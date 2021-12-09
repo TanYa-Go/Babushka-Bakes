@@ -13,8 +13,10 @@
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-9 offset-md-2 text-center ">
-            <h3 class="blog-subtitle">Im not going to give away all of my secrets but I like to share my knowledge and help other
-                aspiring pastry chefs, so here I will share some of the recipes I absolutely love, and I hope you will too.
+            <h3 class="blog-subtitle">Im not going to give away all of my secrets but I like to share my knowledge and
+                help other
+                aspiring pastry chefs, so here I will share some of the recipes I absolutely love, and I hope you will
+                too.
             </h3>
         </div>
     </div>
@@ -34,25 +36,25 @@
 
 <div class="container mt-3">
     <div class="row">
-        <div class="col-sm-12 col-md-8 offset-md-2">
-            {% for post in object_list %}
+        {% for post in object_list %}
+        <div class="col-sm-12 col-md-4">
             <div class="card mb-3">
-                <a href="#!"><img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image }}" alt="..." width="100%"
-                        height="auto" /></a>
-                <div class="card-body">
-                    <h2 class="card-title h4"><a href="{% url 'blog_details' post.pk %}" class="text-dark">{{ post.title }}</a></h2>
-                    <div class="small text-muted">by {{ post.author }}</div> 
-                    {% if request.user.is_superuser %}
-                    <a href="{% url 'edit_post' post.pk %}">Edit</a>
-                    | <a href="{% url 'delete_post' post.pk %}" class="delete">Delete</a><br>
-                    {% endif %}
-                    <p class="card-text">{{ post.subtitle }}</p>
-                    <a class="btn btn-primary" href="{% url 'blog_details' post.pk %}">Read more →</a>
-                </div>
+                <a href="#!"><img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.title }}">
+                    <div class="card-body">
+                        <h2 class="card-title h4"><a href="{% url 'blog_details' post.pk %}" class="text-dark">{{
+                                post.title }}</a></h2>
+                        <div class="small text-muted">by {{ post.author }}</div>
+                        {% if request.user.is_superuser %}
+                        <a href="{% url 'edit_post' post.pk %}">Edit</a>
+                        | <a href="{% url 'delete_post' post.pk %}" class="delete">Delete</a><br>
+                        {% endif %}
+                        <p class="card-text">{{ post.subtitle }}</p>
+                        <a class="btn btn-primary" href="{% url 'blog_details' post.pk %}">Read more →</a>
+                    </div>
+                </a>
             </div>
-            {% endfor %}
-
         </div>
+        {% endfor %}
     </div>
 </div>
 
