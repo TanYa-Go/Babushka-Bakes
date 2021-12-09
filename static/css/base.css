@@ -8,8 +8,8 @@ body {
     background: url('https://babushka-bakes.s3.eu-central-1.amazonaws.com/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
-    font-family: Mohave;
+    color: #333;
+    font-family: "Mohave";
 
 }
 
@@ -21,63 +21,64 @@ icon {
     width: 1.5rem;
 }
 
-.navbar {
-    font-family: Mohave;
-}
 
 .logo-font {
     text-transform: uppercase;
-    font-family: Mohave;
+   
 }
 
 .message-font {
-    font-family: Dancing Script;
+    font-family: "Dancing Script";
 }
 
 .menu-font {
     text-transform: uppercase;
-    font-family: Mohave;
-    font-size: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-family: "Mohave";
+    
 }
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fafafa;
+    text-shadow: 2px 2px #333;
+}
+.nav-link:hover, .nav-link:focus {
+    color: #333;
+  }
 
 .main-logo-link {
     width: fit-content;
-    font-family: Mohave;
 }
 
 .shop-now-button {
     background: #f57e87;
     color: white;
     min-width: 200px;
-    font-family: Mohave;
     height: max-content;
-
 }
 
 .contact-us-button {
     background: #78C2AD;
     color: white;
     min-width: 200px;
-    font-family: Mohave;
     height: max-content;
     
 }
 
 .btn-outline-black {
     background: white;
-    color: black !important;
-    border: 1px solid black;
+    color: #333 !important;
+    border: 1px solid #333;
 }
 
 .btn-pink {
     background: #f57e87;
-    color: white;
+    color: #fafafa;
     border-radius: 5px;
 }
 
-/* .shop-now-button:hover, */
-/* .shop-now-button:active, */
-/* .shop-now-button:focus, */
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -90,7 +91,7 @@ icon {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #333 !important;
 }
 
 .bg-pink {
@@ -98,7 +99,7 @@ icon {
 }
 
 .bg-black {
-    background: black;
+    background: #333;
 }
 
 
