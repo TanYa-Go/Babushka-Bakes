@@ -1,47 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Ceviche+One&family=Dancing+Script&family=Mohave:ital,wght@0,400;0,500;0,600;1,700&family=Zen+Kurenaido&display=swap');
 
+:root {
+    --mohave-font: "Mohave";
+    --title-font-size: 4rem;
+    --subtitle-font-size: 2.8rem;
+    --primary-color: #78C2AD;
+    --secondary-color: #f57e87;
+    --button: 1.8rem;
+    --paragraph: 2rem;
+}
+
+
 html {
     height: 100%;
+    font-size: 62.5%;
+   
+}
+body, body * {
+    font-family: var(--mohave-font);
+    font-size: 1.6rem;
 }
 
 body {
     background: url('https://babushka-bakes.s3.eu-central-1.amazonaws.com/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: calc(100vh - 164px);
+    height: calc(100vh - 16.4rem);
     color: #333;
-    font-family: "Mohave";
-
+    overflow-x: hidden;
 }
 
-icon {
+.btn {
+    font-family: var(--mohave-font);
+    font-size: var(--button);
+}
+
+.icon {
     align-items: center;
     display: inline-flex;
     justify-content: center;
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2rem;
+    width: 2rem;
 }
 
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    min-height: 30rem;
+    padding: 3rem 10rem 1rem 10rem;
+
+}
+
+.alert-font {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+}
 
 .logo-font {
     text-transform: uppercase;
-   
+    font-size: var(--title-font-size);
+    
 }
 
 .message-font {
     font-family: "Dancing Script";
+    font-size: var(--subtitle-font-size);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding:10px;
+
+}
+
+.form-control {
+    font-size: 1.5rem;
 }
 
 .menu-font {
     text-transform: uppercase;
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     letter-spacing: 0.1rem;
-    font-family: "Mohave";
-    
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: #fafafa;
-    text-shadow: 2px 2px #333;
+    text-shadow: 0.1rem 0.1rem #333;
 }
 .nav-link:hover, .nav-link:focus {
     color: #333;
@@ -51,39 +92,36 @@ icon {
     width: fit-content;
 }
 
-.shop-now-button {
-    background: #f57e87;
-    color: white;
-    min-width: 200px;
-    height: max-content;
-}
 
-.contact-us-button {
-    background: #78C2AD;
+
+.home-page-button {
     color: white;
-    min-width: 200px;
+    min-width: 20rem;
     height: max-content;
-    
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0.1rem 0.1rem #333;
 }
 
 .btn-outline-black {
     background: white;
     color: #333 !important;
-    border: 1px solid #333;
+    border: 0.1rem solid #333;
 }
 
 .btn-pink {
-    background: #f57e87;
+    background: var(--secondary-color);
     color: #fafafa;
-    border-radius: 5px;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
 }
 
 
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: black;
-    color: white;
+    background: #333;
+    color: #fafafafa;
 }
 
 .text-black {
@@ -91,11 +129,11 @@ icon {
 }
 
 .border-black {
-    border: 1px solid #333 !important;
+    border: 0.1rem solid #333 !important;
 }
 
 .bg-pink {
-    background: #f57e87 !important;
+    background: var(--secondary-color) !important;
 }
 
 .bg-black {
@@ -104,13 +142,11 @@ icon {
 
 
 .navbar-light {
-    background: #f57e87;
-
-
+    background: var(--secondary-color);
 }
 
 .dropdown-item:hover {
-    background: #f57e87;
+    background: var(--secondary-color);
 }
 
 .overlay {
@@ -123,15 +159,6 @@ icon {
     z-index: -1;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: Mohave;
-}
-
 .btt-link,
 .update-link,
 .remove-item {
@@ -142,8 +169,8 @@ h6 {
 
 .message-container {
     position: fixed;
-    top: 72px;
-    right: 15px;
+    top: 7.2rem;
+    right: 1.5rem;
     z-index: 99999999999;
 }
 
@@ -152,11 +179,11 @@ h6 {
 }
 
 .toast-capper {
-    height: 2px;
+    height: 0.2rem;
 }
 
 .cart-notification-wrapper {
-    height: 100px;
+    height: 10rem;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -168,11 +195,11 @@ h6 {
 }
 
 .card {
-    border: 3px solid #f57e87;
+    border: 0.3rem solid var(--secondary-color);
 }
 
 .card-img-top {
-    padding-top: 15px;
+    padding-top: 1.5rem;
     width: 95%;
     display: block;
     margin-left: auto;
@@ -182,48 +209,65 @@ h6 {
 
 .card-body {
     flex: 1 1 auto;
-    padding: 2rem 2rem;
-
 }
 
 .blog-subtitle {
     font-family: Dancing Script;
+    font-size: var(--subtitle-font-size);
 }
 
 .delete {
-   color: #f57e87;
+   color: var(--secondary-color);
+}
+
+/*------ About Page ------*/
+
+.biography {
+    font-size: var(--paragraph);
 }
 
 
+.browse {
+    font-size: 2rem;
+    
+}
+
+.browse:hover {
+    text-decoration: none;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
 
 
 /*------ Contat Page ------*/
 
 .address-container {
-    margin-bottom: 80px;
+    margin-bottom: 8rem;
 }
 
 .delivery-txt {
-    font-family: Mohave;
-    margin-bottom: 100px;
-    margin-top: 50px;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
 }
 
 
 #address-title {
-    color: #f57e87;
+    color: var(--secondary-color);
 }
 
 
 /*------ Footer ------*/
 
-footer {
-    background-color: #78C2AD;
-    color: white;
-    min-height: 300px;
-    font-family: Mohave;
-    padding: 30px 100px 10px 100px;
-
+footer h2 {
+    font-size: 3rem;
 }
 
 .footer-link {
@@ -231,20 +275,17 @@ footer {
     display: inline;
     color: white;
     padding: .2rem;
-    font-size: 1.2rem;
+    font-size: 2.2rem;
 }
 
 .footer-link:hover {
     text-decoration: underline;
-    color: #f57e87;
-}
-
-.footer-link-brand {
-    text-transform: uppercase;
+    color: var(--secondary-color);
 }
 
 footer p {
     margin-bottom: 0;
+    font-size: 1.5rem;
 }
 
 .footer-row {
@@ -272,12 +313,13 @@ footer p {
 .fa-instagram:before,
 .fa-pinterest-p:before,
 .fa-youtube-square:before {
-    color: #f57e87;
-    text-shadow: 1px 1px black;
+    color: var(--secondary-color);
+    text-shadow: 1px 1px #333;
+    font-size: 2rem;
 }
 
 .footer-social:hover {
-    border-bottom: 1px solid #f57e87;
+    border-bottom: 1px solid var(--secondary-color);
 
 }
 
@@ -287,48 +329,9 @@ footer p {
 }
 
 .reset {
-    background-color: #f57e87 !important;
+    background-color: var(--secondary-color) !important;
     border-radius: 5px !important;
     border: none !important;
-}
-
-
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
-}
-
-/* fixed top navbar only on medium and up */
-@media (min-width: 992px) {
-    .fixed-top-desktop-only {
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 1030;
-    }
-
-    .header-container {
-        padding-top: 164px;
-    }
-
-    
-}
-
-
-@media (min-width: 320px) and (max-width: 991px)  {
-    .shop-now-button {
-        margin-top: 100px;
-    }
-
-    .contact-us-button {
-        margin-top: 10px;
-       
-    }
 }
 
 
@@ -414,3 +417,44 @@ allauth-form-inner-content button,
     border-color: #dc3545;
     border-radius: 0;
 }
+
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+
+    
+}
+
+
+@media (min-width: 320px) and (max-width: 991px)  {
+    .shop-now-button {
+        margin-top: 100px;
+    }
+
+    .contact-us-button {
+        margin-top: 10px;
+       
+    }
+}
+
+
