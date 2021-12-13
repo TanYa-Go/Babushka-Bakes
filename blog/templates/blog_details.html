@@ -13,7 +13,7 @@
             <br><br>
             <img src="{{ MEDIA_URL }}{{ post.image }}" alt="" width="50%"><br><br>
             <hr>
-            <h5 class="text-justify">{{ post.body }}</h5>
+            <h5 class="text-justify">{{ post.body|linebreaks }}</h5>
             <hr>
         </div>
     </div>
