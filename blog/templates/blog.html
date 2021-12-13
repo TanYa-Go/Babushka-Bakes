@@ -39,9 +39,9 @@
         {% for post in object_list %}
         <div class="col-sm-12 col-md-4">
             <div class="card mb-3">
-                <a href="#!"><img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.title }}">
+                <a href="{% url 'blog_details' post.pk %}"><img class="card-img-top" src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.title }}">
                     <div class="card-body">
-                        <h2 class="card-title h4"><a href="{% url 'blog_details' post.pk %}" class="text-dark">{{ post.title }}</a></h2>
+                        <p class="card-title"><a href="{% url 'blog_details' post.pk %}" class="text-dark post-title">{{ post.title }}</a></p>
                         <div class="small text-muted">by {{ post.author }}</div>
                         {% if request.user.is_superuser %}
                         <a href="{% url 'edit_post' post.pk %}">Edit</a>

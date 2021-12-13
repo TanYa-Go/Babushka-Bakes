@@ -5,18 +5,22 @@
 <div class="container mt-3">
     <div class="row">
         <div class="col-12 text-center">
-            <h1 class="mt-4">{{ post.title }}</h1>
+            <h2 class="mt-4">{{ post.title }}</h2>
             {% if request.user.is_superuser %}
             <small>By: {{ post.author }} </small> - <a href="{% url 'edit_post' post.pk %}">Edit</a>
             | <a href="{% url 'delete_post' post.pk %}">Delete</a>
             {% endif %}
             <br><br>
-            <img src="{{ MEDIA_URL }}{{ post.image }}" alt="" width="50%"><br><br>
-            <hr>
-            <h5 class="text-justify">{{ post.body|linebreaks }}</h5>
+            <img src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.image }}" width="50%"><br><br>
             <hr>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12">
+            <p class="post-body">{{ post.body|linebreaks }}</p>
+        </div>
+    </div>
+    <hr>
     <a href="{% url 'blog' %}" class="btn btn-secondary mb-4">Back to Blog</a>
 </div>
 

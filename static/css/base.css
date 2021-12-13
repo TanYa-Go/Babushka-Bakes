@@ -29,10 +29,32 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+
 .btn {
     font-family: var(--mohave-font);
     font-size: var(--button);
 }
+
+.address {
+    font-size: var(--paragraph);
+}
+
 
 .icon {
     align-items: center;
@@ -44,7 +66,7 @@ body {
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #fafafafa;
     min-height: 30rem;
     padding: 3rem 10rem 1rem 10rem;
 
@@ -68,6 +90,18 @@ footer {
     margin-top: 50px;
     padding:10px;
 
+}
+
+.price {
+    font-size: 1.8rem;
+}
+
+.btn-text {
+    font-size: var(--button);
+}
+
+.text-muted {
+    font-size: 1.5rem;
 }
 
 .form-control {
@@ -196,6 +230,7 @@ footer {
 
 .card {
     border: 0.3rem solid var(--secondary-color);
+    background-color: #fafafafa;
 }
 
 .card-img-top {
@@ -209,6 +244,11 @@ footer {
 
 .card-body {
     flex: 1 1 auto;
+    background-color: #fafafafa;
+}
+
+.card-footer {
+    background-color: #fafafafa;
 }
 
 .blog-subtitle {
@@ -219,6 +259,15 @@ footer {
 .delete {
    color: var(--secondary-color);
 }
+
+.post-title {
+ font-size: 2.5rem;
+}
+
+.post-body { 
+    font-size: 5rem;
+}
+
 
 /*------ About Page ------*/
 
