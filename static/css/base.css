@@ -4,6 +4,7 @@
     --mohave-font: "Mohave";
     --title-font-size: 4rem;
     --subtitle-font-size: 2.8rem;
+    --heading: 2.2rem;
     --primary-color: #78C2AD;
     --secondary-color: #f57e87;
     --button: 1.8rem;
@@ -14,6 +15,7 @@
 html {
     height: 100%;
     font-size: 62.5%;
+    
    
 }
 body, body * {
@@ -86,10 +88,16 @@ footer {
 .message-font {
     font-family: "Dancing Script";
     font-size: var(--subtitle-font-size);
-    margin-bottom: 50px;
-    margin-top: 50px;
-    padding:10px;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    padding:1rem;
 
+}
+
+.subtitle-font {
+    font-size: var(--heading);
+    margin-top: 5rem;
+    padding:1rem;
 }
 
 .price {
@@ -100,11 +108,7 @@ footer {
     font-size: var(--button);
 }
 
-.text-muted {
-    font-size: 1.5rem;
-}
-
-.form-control {
+.text-muted, .form-control {
     font-size: 1.5rem;
 }
 
@@ -128,7 +132,8 @@ footer {
 
 
 
-.home-page-button {
+.shop-now-button {
+    background-color: var(--secondary-color);
     color: white;
     min-width: 20rem;
     height: max-content;
@@ -137,6 +142,15 @@ footer {
     text-shadow: 0.1rem 0.1rem #333;
 }
 
+.contact-us-button {
+    background-color: var(--primary-color);
+    color: white;
+    min-width: 20rem;
+    height: max-content;
+    font-size: 2rem;
+    font-weight: 500;
+    text-shadow: 0.1rem 0.1rem #333;
+}
 .btn-outline-black {
     background: white;
     color: #333 !important;
@@ -264,8 +278,9 @@ footer {
  font-size: 2.5rem;
 }
 
-.post-body { 
-    font-size: 5rem;
+.post-body p { 
+    font-size: 1.8rem;
+    text-align: justify;
 }
 
 
@@ -312,6 +327,9 @@ footer {
     color: var(--secondary-color);
 }
 
+.contact-img {
+    max-width:100%;
+}
 
 /*------ Footer ------*/
 
@@ -468,7 +486,7 @@ allauth-form-inner-content button,
 }
 
 
-/* -------------------------------- Media Queries */
+/* ------------------------------------------------ Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
@@ -493,7 +511,6 @@ allauth-form-inner-content button,
 
     
 }
-
 
 @media (min-width: 320px) and (max-width: 991px)  {
     .shop-now-button {
