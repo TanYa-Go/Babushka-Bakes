@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-
 <title>{% block extra_title %} Delete Blog Post {% endblock %}</title>
 
 {% block content %}
@@ -15,7 +14,7 @@
             <img src="{{ MEDIA_URL }}{{ post.image }}" alt=""><br><br>
             <form action="" method="post">
                 {% csrf_token %}
-                <button class="btn btn-primary mt-4">Delete Post</button>
+                <button type="submit" class="btn btn-primary mt-4">Delete Post</button>
             </form>
             <br>
         </div>

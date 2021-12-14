@@ -20,8 +20,7 @@ if os.path.exists("env.py"):
     import env
 
 
-DEBUG = 'DEVELOPMENT' in os.environ 
-        
+DEBUG = 'DEVELOPMENT' in os.environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -58,7 +57,7 @@ INSTALLED_APPS = [
     'blog',
     'checkout',
     'profiles',
-    
+
     # Other
     'crispy_forms',
     'storages',
@@ -188,14 +187,13 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-
 if 'USE_AWS' in os.environ:
-    #Cache control
+    # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         "Expires": "Thu, 31 Dec 2099 20:00:00 GMT",
         "CacheControl": "max-age=94608000",
     }
-    
+
     # Bucket config
     AWS_STORAGE_BUCKET_NAME = 'babushka-bakes'
     AWS_S3_REGION_NAME = 'eu-central-1'
@@ -203,27 +201,24 @@ if 'USE_AWS' in os.environ:
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
     AWS_S3_ADDRESSING_STYLE = "path"
-    
-     # Static and media files
+
+    # Static and media files
     STATICFILES_STORAGE = "custom_storages.StaticStorage"
     STATICFILES_LOCATION = "static"
     DEFAULT_FILE_STORAGE = "custom_storages.MediaStorage"
-    MEDIAFILES_LOCATION = "media" 
+    MEDIAFILES_LOCATION = "media"
 
     # Override static and media URLs in production
     STATIC_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/"
     MEDIA_URL = f"https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/"
 
 
-
-    
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#Stripe
+# Stripe
 FREE_DELIVERY_THRESHOLD = 150
 STANDARD_DELIVERY_PERCENTAGE = 10
 STRIPE_CURRENCY = 'usd'
@@ -244,4 +239,3 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
-
