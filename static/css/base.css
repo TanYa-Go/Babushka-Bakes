@@ -15,13 +15,19 @@
 html {
     height: 100%;
     font-size: 62.5%;
-    
-   
 }
+
+body {
+    min-height: 100%;
+}
+
+
 body, body * {
     font-family: var(--mohave-font);
     font-size: 1.6rem;
 }
+
+
 
 body {
     background: url('https://babushka-bakes.s3.eu-central-1.amazonaws.com/media/hero.jpg') no-repeat center center fixed;
@@ -29,6 +35,7 @@ body {
     height: calc(100vh - 16.4rem);
     color: #333;
     overflow-x: hidden;
+          
 }
 
 h1 {
@@ -71,7 +78,8 @@ footer {
     color: #fafafafa;
     min-height: 30rem;
     padding: 3rem 10rem 1rem 10rem;
-
+    position: sticky;
+    top:100%
 }
 
 .alert-font {
@@ -114,7 +122,7 @@ footer {
 
 .menu-font {
     text-transform: uppercase;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
     letter-spacing: 0.1rem;
 }
 
@@ -508,18 +516,92 @@ allauth-form-inner-content button,
     .header-container {
         padding-top: 164px;
     }
-
-    
 }
 
-@media (min-width: 320px) and (max-width: 991px)  {
+/* pad the top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+    
+    .nav-link {
+        font-size: 2rem; 
+    }
+    .nav-link p {
+        font-size: 1.5rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: 1.5rem;
+    }
     .shop-now-button {
         margin-top: 100px;
+        font-size: 1.5rem;
+        min-width: 15rem;
     }
 
     .contact-us-button {
         margin-top: 10px;
-       
+        font-size: 1.5rem;
+        min-width: 15rem;
+    }
+    
+    .logo-font {
+        font-size: 2.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        min-height: 10rem;
+    }
+
+    .footer-link {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .message-font {
+        font-size: 2rem;
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+    .btn-text {
+        font-size: 1.5rem;
+    }
+    .blog-subtitle {
+        font-size: 2.2rem;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .address {
+        padding: 1rem;
+        font-size: 1.8rem;
     }
 }
 
