@@ -11,7 +11,7 @@
             <br>
             <h1>Delete Post : </h1><br>
             <h2>{{ post.title }}</h2><br>
-            <img src="{{ MEDIA_URL }}{{ post.image }}" alt=""><br><br>
+            <img src="{{ MEDIA_URL }}{{ post.image }}" class="blog-img-size" alt="{{ post.image }}"><br><br>
             <form action="" method="post">
                 {% csrf_token %}
                 <button type="submit" class="btn btn-primary mt-4">Delete Post</button>

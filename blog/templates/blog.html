@@ -39,8 +39,7 @@
                 <a href="{% url 'blog_details' post.pk %}"><img class="card-img-top"
                         src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.title }}">
                     <div class="card-body">
-                        <p class="card-title"><a href="{% url 'blog_details' post.pk %}" class="text-dark post-title">{{
-                                post.title }}</a></p>
+                        <p class="card-title"><a href="{% url 'blog_details' post.pk %}" class="text-dark post-title">{{post.title }}</a></p>
                         <div class="small text-muted">by {{ post.author }}</div>
                         {% if request.user.is_superuser %}
                         <a href="{% url 'edit_post' post.pk %}">Edit</a>
