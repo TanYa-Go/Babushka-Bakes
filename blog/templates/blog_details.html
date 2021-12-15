@@ -11,13 +11,13 @@
             | <a href="{% url 'delete_post' post.pk %}" class="delete">Delete</a>
             {% endif %}
             <br><br>
-            <img src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.image }}" width="50%"><br><br>
+            <img src="{{ MEDIA_URL }}{{ post.image }}" alt="{{ post.image }}" class="blog-img-size"><br><br>
             <hr>
         </div>
     </div>
     <div class="row">
         <div class="col-12 post-body">
-            <p>{{ post.body|linebreaks }}</p>
+            <p>{{ post.body|linebreaksbr }}</p>
         </div>
     </div>
     <hr>

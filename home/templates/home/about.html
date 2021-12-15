@@ -9,9 +9,9 @@
             <h2 class="logo-font">About Me</h2>
             <hr class="w-50 mb-3">
             <h3 class="message-font">
-                I absloutely love what I do and <i class="fas fa-heart fa-md"></i> is the main ingredient in my baking 
+                I absloutely love what I do and <i class="fas fa-heart fa-md"></i> is the main ingredient in my baking
             </h3>
-           
+
         </div>
     </div>
 </div>
@@ -22,7 +22,7 @@
         <div class="col-12 col-md-4">
             <div class="text-center">
                 <img src="{{ MEDIA_URL }}3.jpg" class="responsive" alt="chef Petra">
-           </div>
+            </div>
         </div>
         <div class="col-12 col-md-4">
         </div>
@@ -35,31 +35,40 @@
         <div class="col-12">
             <div class="delivery-txt text-justify">
                 <hr class="w-50 mb-3">
-                  <p class="biography text-center">
-                    <br/> 
-                    Perhaps we've met before or maybe you are here for the first time, 
-                    either way, I hope you find something that suits your taste! 
-                    <br/><br/>
-                    My name is Petra and I have always been a foodie! I always enjoyed good food and desserts, often more than I should, pssssst!
-                    And of course, a good company to share it with! But I never dreamed that life will bring me down this career path. 
-                    When I moved to Ireland I worked in a few restaurants and met some great chefs and pastry chefs. Then, the passion in me 
-                    awoke, and it was loud! I decided to enroll into a culinary school and the rest is history, as they say. I worked as a chef and
-                    enjoyed every bit of it, however my love for baking was much stronger. I started to experiment, make cakes, cookies, donuts, 
-                    cupcakes, you name it, with all kinds of new and interesting ingredients and flavors, and I never stopped. 
-                    My other love and passion is bread, I truly enjoy seeing that perfect sourdough...yummmm! 
-                    <br/><br/>
-                    After baking bread and cakes for my family and friends for a while, I've seen the demand slowly increasing and I decided that
-                    it was time to open my very own bakery. And here we are! Feel free to browse the shop, where I offer my best selling products. 
+                <p class="biography text-center">
+                    <br />
+                    Perhaps we've met before or maybe you are here for the first time,
+                    either way, I hope you find something that suits your taste!
+                    <br /><br />
+                    My name is Petra and I have always been a foodie! I always enjoyed good food and desserts, often
+                    more than I should, pssssst!
+                    And of course, a good company to share it with! But I never dreamed that life will bring me down
+                    this career path.
+                    When I moved to Ireland I worked in a few restaurants and met some great chefs and pastry chefs.
+                    Then, the passion in me
+                    awoke, and it was loud! I decided to enroll into a culinary school and the rest is history, as they
+                    say. I worked as a chef and
+                    enjoyed every bit of it, however my love for baking was much stronger. I started to experiment, make
+                    cakes, cookies, donuts,
+                    cupcakes, you name it, with all kinds of new and interesting ingredients and flavors, and I never
+                    stopped.
+                    My other love and passion is bread, I truly enjoy seeing that perfect sourdough...yummmm!
+                    <br /><br />
+                    After baking bread and cakes for my family and friends for a while, I've seen the demand slowly
+                    increasing and I decided that
+                    it was time to open my very own bakery. And here we are! Feel free to browse the shop, where I offer
+                    my best selling products.
                     Rest assured that all ingredients are fresh and carefully and locally sourced.
-                    <br/><br/>
-                    If you have an idea for the cake or bread or anything else that you don't see here, send me a message and I will be in touch!
-                    <br/><br/>
-                    Bon appetit! 
-                    <br/><br/>
-                    Love, 
-                    <br/><br/>
+                    <br /><br />
+                    If you have an idea for the cake or bread or anything else that you don't see here, send me a
+                    message and I will be in touch!
+                    <br /><br />
+                    Bon appetit!
+                    <br /><br />
+                    Love,
+                    <br /><br />
                     <span class="message-font">Petra</span>
-                    
+
                 </p>
             </div>
         </div>
@@ -69,13 +78,13 @@
 <div class="container">
     <div class="row mt-4 mb-4 text-center">
         <div class="col-12 col-md-4 mb-3">
-            <img src="{{ MEDIA_URL }}6.jpg" class="responsive-img"  alt="chef Petra">
+            <img src="{{ MEDIA_URL }}6.jpg" class="responsive-img" alt="chef Petra">
         </div>
         <div class="col-12 col-md-4 mb-3">
-            <img src="{{ MEDIA_URL }}1.jpg" class="responsive-img"  alt="chef Petra">        
+            <img src="{{ MEDIA_URL }}1.jpg" class="responsive-img" alt="chef Petra">
         </div>
         <div class="col-12 col-md-4">
-            <img src="{{ MEDIA_URL }}12.jpg" class="responsive-img" alt="chef Petra">        
+            <img src="{{ MEDIA_URL }}12.jpg" class="responsive-img" alt="chef Petra">
         </div>
     </div>
 </div>
@@ -83,9 +92,7 @@
 <hr class="w-50 mb-3 mt-4">
 <h3 class="text-center mt-3 mb-4 blog-subtitle">Wanna try some of my best selling cakes?</h3>
 <p class="text-center mb-4">
-    <button type="button" class="btn btn-secondary mt-2 ml-auto mb-4 mt-4">
-        <a href="{% url 'products' %}" class="text-white browse" >Browse Shop</a>
-        </button>
+    <a href="{% url 'products' %}" class="text-white browse btn btn-secondary mt-2 ml-auto mb-4 mt-4">Browse Shop</a>
 </p>
 
 {% include 'includes/footer.html' %}

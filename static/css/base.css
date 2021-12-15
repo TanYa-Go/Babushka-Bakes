@@ -296,7 +296,7 @@ footer {
 }
 
 .blog-img-size {
-    width: 40%;
+    width: 50%;
 }
 
 /*------ About Page ------*/
@@ -613,7 +613,7 @@ allauth-form-inner-content button,
         font-size: 2.2rem;
     }
 
-    img {
+    .blog-img-size {
         width: 100%;
     }
 
