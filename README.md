@@ -120,7 +120,10 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 * Website that is fully responsive on desktop, tablet and mobile
 * Navigation at the top to guide the cutomer troughout the site 
+* Products page to showcase all the products
 * Search field so customers can search for products quicker
+* Shopping cart so customers can purchase the products
+* Safe checkout and payment option 
 * Possibility for customers to create an account in order to shop for products
 * Blog page where site owner will post news and recipes
 * Contact form through which customers can contact the site owner directly
@@ -130,7 +133,13 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 ### **Features to be implemented**
 
-
+The website is currently a fully functional shop that covered all site owners wishes and can be used as such. However there is still lots of ideas to improve it and make the customer experience better. Some of the features that I was not able to implement for this release and would love to in the future:
+* Workshops tab that will show details of events and workshops that Petra is hosting
+* Option for visitors to apply and pay for the workshop
+* A possibility to login with visitor's social media account to make the process even shorter and smoother
+* An option for visitors to comment on the blog posts
+* Pagination for the products page and blog page
+* Add some videos of the Bakery and Petra at work 
 
 
 
