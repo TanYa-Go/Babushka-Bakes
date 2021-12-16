@@ -80,7 +80,8 @@ footer {
     min-height: 30rem;
     padding: 3rem 10rem 1rem 10rem;
     position: sticky;
-    top: 100%
+    top: 100%;
+    margin-top: 20rem;
 }
 
 .alert-font {
@@ -91,6 +92,7 @@ footer {
 .logo-font {
     text-transform: uppercase;
     font-size: var(--title-font-size);
+    margin-top: 10rem;
 
 }
 
@@ -225,7 +227,7 @@ footer {
     cursor: pointer;
 }
 
-/* ------ Bootstrap Toasts ----- */
+/* -- Bootstrap Toasts -- */
 
 .message-container {
     position: fixed;
@@ -248,7 +250,7 @@ footer {
     overflow-y: auto;
 }
 
-/*------ Blog Page ------*/
+/*-- Blog Page --*/
 
 .h-rule {
     width: 50%;
@@ -299,7 +301,7 @@ footer {
     width: 50%;
 }
 
-/*------ About Page ------*/
+/*-- About Page --*/
 
 .biography {
     font-size: var(--paragraph);
@@ -326,7 +328,7 @@ footer {
 }
 
 
-/*------ Contat Page ------*/
+/*-- Contact Page --*/
 
 .address-container {
     margin-bottom: 8rem;
@@ -346,7 +348,7 @@ footer {
     max-width: 100%;
 }
 
-/*------ Footer ------*/
+/*-- Footer --*/
 
 footer h2 {
     font-size: 3rem;
@@ -417,7 +419,7 @@ footer p {
 }
 
 
-/* Allauth form formatting */
+/*-- Allauth form formatting --*/
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem;
@@ -475,7 +477,7 @@ allauth-form-inner-content button,
 }
 
 
-/* Product Form */
+/*--Product Form --*/
 
 .btn-file {
     position: relative;
@@ -504,7 +506,7 @@ allauth-form-inner-content button,
 }
 
 
-/* ------------------------------------------------ Media Queries */
+/* -- Media Queries --*/
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {

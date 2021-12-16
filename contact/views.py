@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .forms import ContactForm
 from django.http import HttpResponseRedirect
 
+
 def contact(request):
     """ A view that renders the contact page"""
     submitted = False
@@ -11,7 +12,7 @@ def contact(request):
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/contact?submitted=True')
-    else:      
+    else:    
         form = ContactForm
         if 'submitted' in request.GET:
             submitted = True

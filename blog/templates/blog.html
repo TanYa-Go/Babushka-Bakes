@@ -6,24 +6,23 @@
 
 <div class="overlay"></div>
 <div class="col-12 text-center">
-    <h1 class="mt-4 logo-font">Get inspired... </h1>
+    <h1 class="logo-font">Get inspired... </h1>
     <br>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-9 offset-md-2 text-center ">
+        <div class="col-12 text-center ">
             <h3 class="blog-subtitle">Im not going to give away all of my secrets but I like to share my knowledge and
-                help other
-                aspiring pastry chefs, so here I will share some of the recipes I absolutely love, and I hope you will
-                too.
+                help other aspiring pastry chefs, so here I will share some of the recipes I absolutely love, and I hope 
+                you will too.
             </h3>
         </div>
     </div>
-    <hr class="h-rule">
+    <hr class="h-rule mb-4 mt-4">
     <div class="row">
         <div class="col-12 text-center">
             {% if request.user.is_superuser %}
-            <a href="{% url 'add_post' %}" class="text-white btn btn-secondary mt-3"><i class="fas fa-plus"></i>
+            <a href="{% url 'add_post' %}" class="text-white btn btn-secondary mb-4"><i class="fas fa-plus"></i>
                 Add New Post</a>
             {% endif %}
         </div>
@@ -54,5 +53,8 @@
     </div>
 </div>
 
+    <p class="text-center mb-4 mt-4 pb-4">
+        <a href="{% url 'products' %}" class="btn btn-secondary mt-2 ml-auto mb-4 text-white btn-text">Go To Shop</a>
+    </p>
 {% include 'includes/footer.html' %}
 {% endblock %}
