@@ -59,9 +59,9 @@ custom orders. I created a site that contains a blog - where she can communicate
 
    Site visior/shopper's goal is to be able to easily browse the website on any device so that they can quickly find what they are   looking for. Whether that is to buy products or just find some inspiration for their own baking. The easier is to find the contact information to contact the site owner, the better experience they will have. They need to clearly see what is the benefit of signing up for the account and what benefits will that bring them. 
 
-* #### **Staff**
+* #### **Admin/Staff**
 
-  Staff goal is to maintain the website as per site owners wishes. They need to have an easy access to the admin panel and the login details so they can update the content required. The site needs to be intuitive for them and clearly show options for adding and updating certain details. 
+  Admin/Staff goal is to maintain the website as per site owners wishes. They need to have an easy access to the admin panel and the login details so they can update the content required. The site needs to be intuitive for them and clearly show options for adding and updating products, blog posts etc. 
 
 
 [Back to Top](#table-of-contents)
@@ -72,7 +72,8 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 * Site owner Petra's goal is to have a website that will represent her as a pastry chef and a person. 
 * To have a place where she can showcase her work and be able to communicate with her visitors which will hopefully turn into customers. 
-* She would like to offer some of her best selling products in the online shop but also to have an option where people can reach out to her to order custom products too.
+* She would like to offer some of her best selling products in the online shop. 
+* To have an option where people can reach out to her to order custom products 
 * To have the possibility to Add, Edit, and Delete products.
 * To have the possibility to Add, Edit, and Delete blog posts.
 * To provide a secure payment method for customers.
@@ -81,27 +82,25 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 ### **User Stories**
 
-
-| As   a             | I want to be able to                   | So that I can…                                                                      |
-|--------------------|----------------------------------------|-------------------------------------------------------------------------------------|
-|                    |                                        |                                                                                     |
-| Visitor            | view the products                      | choose what to buy                                                                  |
-|                    | search for products                    | find them easily without going through all products                                 |
-|                    | see product details                    | find out if I want to buy it                                                        |
-|                    | add product to the cart                | buy it                                                                              |
-|                    | remove/edit product from cart          | update my cart and buy product and amounts that I want                              |
-|                    | read the blog                          | find some reciepts that I can try                                                   |
-|                    | see the list of events                 | find the event or workshop I want to attend                                         |
-|                    | see the events details                 | apply if I wish to                                                                  |
-|                    | Add/edit/remove products from the shop | keep my shop up to date with my offer                                               |
-| Site Owner / Staff | receive messages from the contact form | take orders and reply to my customers, keep the details for future   markeing etc.. |
-|                    | Add/edit/remove blog posts             | inform my cutomers about news and share receipts                                    |
-|                    | Add/edit/remove events                 | my customers can have the latest information                                        |
-|                    | Add/edit/remove products from the shop |                                                                                     |
-|                    | Add/edit/remove blog posts             |                                                                                     |
-|                    | Add/edit/remove events                 |                                                                                     |
-|                    |                                        |                                                                                     |
-|                    |                                        |                                                                                     |
+| Site   Visitor | Easily register for an account               | Have my account and view my   profile                                               |
+|----------------|----------------------------------------------|-------------------------------------------------------------------------------------|
+|                | Easily login and logut                       | Access my account                                                                   |
+|                | Easily recover my password if neccesary      | Log back in to my account if I forget my password                                   |
+|                | Contact the store owner                      | Ask a question regarding products or place a custom order                           |
+|                | Read the blog                                | Find some reciepts that I can try                                                   |
+| Shopper        | View the products in the shop                | Choose what to buy                                                                  |
+|                | Search for products by name or description   | Find them easily without going through all products                                 |
+|                | See product details                          | Find out if I want to purchase it                                                   |
+|                | Add product to the cart                      | Purchase it                                                                         |
+|                | Adjust the items in cart                     | Purchase  only products and amounts   that I want                                   |
+|                | See total of my cart at any time             | Control my spending                                                                 |
+|                | Make a safe purchase                         | Trust that my payment details are confidential                                      |
+|                | Receive an email confirmation after purchase | Have the details of my order in case I need to contact the shop                     |
+|                | Contact the store owner                      | Ask a question regarding products or place a custom order                           |
+|                | Read the blog                                | Find some reciepts that I can try                                                   |
+| Admin/Staff    | Add/edit/remove products from the shop       | Keep my shop up to date with my offer                                               |
+|                | Add/edit/remove blog posts                   | Inform my cutomers about news and share receipts                                    |
+|                | Receive emails from the contact form         | Take orders and reply to my customers, keep the details for future   markeing etc.. |
 
 [Back to Top](#table-of-contents)
 

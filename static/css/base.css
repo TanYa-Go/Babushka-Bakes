@@ -92,7 +92,7 @@ footer {
 .logo-font {
     text-transform: uppercase;
     font-size: var(--title-font-size);
-    margin-top: 10rem;
+    margin-top: 7rem;
 
 }
 
@@ -456,7 +456,6 @@ allauth-form-inner-content button,
     background-color: #000;
     border: 1px solid #000;
     padding: .375rem .75rem;
-    font-size: 1rem;
     line-height: 1.5;
     border-radius: 0;
 
@@ -526,7 +525,7 @@ allauth-form-inner-content button,
     }
 
     .header-container {
-        padding-top: 164px;
+        padding-top: 124px;
     }
 }
 
