@@ -131,7 +131,7 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 <a></a>
 
-### **Features to be implemented**
+### **Features Left to implement**
 
 The website is currently a fully functional shop that covered all site owners wishes and can be used as such. However there is still lots of ideas to improve it and make the customer experience better. Some of the features that I was not able to implement for this release and would love to in the future:
 * Workshops tab that will show details of events and workshops that Petra is hosting
@@ -140,7 +140,7 @@ The website is currently a fully functional shop that covered all site owners wi
 * An option for visitors to comment on the blog posts
 * Pagination for the products page and blog page
 * Add some videos of the Bakery and Petra at work 
-
+* Link the actual Petra's social media pages in the footer, instead of a generic page
 
 
 [Back to Top](#table-of-contents)
@@ -149,28 +149,33 @@ The website is currently a fully functional shop that covered all site owners wi
 
 ## **The Structure Plane**
 
+The plan is to have a simple website that is easy to use and intuitive for the user.
 All the pages will have the same heading that will contain the logo, main navigation menu, the search bar, the account login and the shopping cart. 
 
 #### **Home Page**
 
-Home page will have a nice hero image that should tempt the visitor to explore futher
+Home page will have a nice hero image that should clearly tell the user what the website is about and tempt him to explore futher. I will also add a couple of buttons to lead directly to the shop and the contact form.
 #### **About Page**
 
-About page is here to tell the story of Babushka Bakes and its owner, Petra. It will contain her short biography and images.
+About page is here to tell the story of Babushka Bakes and its owner, Petra. It will contain her short biography and images, plus a CTA button.
 #### **Shop Page**
 
-Will contain the list of all the products available in the shop along with the prices. 
+Will contain the list of all the products available in the shop, along with their images, prices and rating. 
+From this page, the user, when clicked on an individual product, will be sent to a product details page. After adding products into the cart the user will be directed to a shopping cart page and if he decides to purchase, will be redirected to a checkout page.
 
 #### **Blog Page**
 
-This page will have the list of blog posts from the owner. Each post will contain of the image, title and subtitle and it will be clickable so the visitor can open the article to read it on a separate page. 
+This page will have the list of blog posts from Petra. Each post will contain of the image, title and subtitle and it will be clickable so the visitor can open the article to read it on a separate page. 
 
 #### **Contact Page**
 
-The contact page will have the contact from where visitors can easily contact the site owner. This form will be sending emails directly to site owners inbox. There will also be a map and address for the Bakery.  
+The contact page will have the contact from where visitors can easily contact the site owner. This form will be sending emails directly to site owners inbox. There will also be a map and address for the Bakery, and a CTA button. 
+
+#### **Footer**
+
+Footer will be very simple, it will contain navigation menu links for easy navigation throughout the site and social media icons that will lead to respective social media websites. 
 ## **The Skeleton Plane**
 <a></a>
-
 
 
 ### **Database Schema**
@@ -254,10 +259,8 @@ Messages from the site owner are written in Dancing Script fornt to feel more pe
 * [Balsamiq](https://balsamiq.com/wireframes/)
 * [W3C HTML Validation Service](https://validator.w3.org/)
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+* [Python Validator](http://pep8online.com/)
 * [techsini](http://techsini.com/)
-* 
-* 
-* 
 * [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 
 [Back to Top](#table-of-contents)
@@ -269,7 +272,7 @@ Messages from the site owner are written in Dancing Script fornt to feel more pe
 
 The full testing procedure can be found in the [Testing](testing.md) file
 
-## **Bugs**
+
 
 [Back to Top](#table-of-contents)
 
@@ -311,7 +314,7 @@ To run this project locally on your machine you will need to clone it first. Ple
 
     ```
     
-    To get the above variables you will need to create a Strip account. Please visit the [Stripe Documentation](https://stripe.com/docs) for more information.
+    To get the above variables you will need to create a Stripe account. Please visit the [Stripe Documentation](https://stripe.com/docs) for more information.
 
     If you plan on pushing this application to a public repository, ensure that env.py is added to your .gitignore file.
 
