@@ -1,6 +1,6 @@
 # **Babushka Bakes**
 
-![Mock up Image](static/images/mockup.png)
+![Mock up Image](media/mockup.png)
 
 
 ## **About the project**
