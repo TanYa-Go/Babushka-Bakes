@@ -41,9 +41,11 @@
                                 alt="{{ product.name }}">
                         </a>
                         {% endif %}
+                        <a href="{% url 'product_details' product.id %}">
                         <div class="card-body pb-0">
                             <h3 class="mb-0">{{ product.name }}</h3>
                         </div>
+                        </a>
                         <div class="card-footer  pt-0 border-0 text-left">
                             <div class="row">
                                 <div class="col">

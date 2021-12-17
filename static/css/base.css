@@ -529,7 +529,6 @@ allauth-form-inner-content button,
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -627,4 +626,11 @@ allauth-form-inner-content button,
         margin-top: 5rem;
 
     }
+    
+.message-container {
+    position: fixed;
+    top: 7.2rem;
+    right: 0.5rem;
+    z-index: 99999999999;
+}
 }
