@@ -12,11 +12,12 @@ def contact(request):
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
+        name = request.POST['name']
         from_email = request.POST['email']
         subject = request.POST['subject']
         message = request.POST['message']
         html_email = render_to_string(
-                'emails/contact_form_template.html', {'from_email': from_email, 'subject': subject, 'message': message})
+                'emails/contact_form_template.html', {'name': name, 'from_email': from_email, 'subject': subject, 'message': message})
         if form.is_valid():
             form.save()
             send_mail(

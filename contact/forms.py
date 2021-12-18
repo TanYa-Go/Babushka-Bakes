@@ -6,15 +6,20 @@ from .models import Contact
 class ContactForm(ModelForm):
     class Meta:
         model = Contact
-        fields = ('email', 'subject', 'message')
+        fields = ('name', 'email', 'subject', 'message')
         labels = {
+            'name': '',
             'email': '',
-            'subject':'',
-            'message':'',
+            'subject': '',
+            'message': '',
          }
         widgets = {
-            'email': forms.EmailInput(attrs={'class':'form-control', 'placeholder': 'Enter Your Email Adress'}),
-            'subject':forms.TextInput(attrs={'class':'form-control','placeholder': 'Enter Message Subject'}),
-            'message':forms.Textarea(attrs={'class':'form-control','placeholder': 'Your Message Here'}),
-         }
-        
+            'name': forms.TextInput(
+                attrs={'class': 'form-control', 'placeholder': 'Your Full Name'}),
+            'email': forms.EmailInput(
+                attrs={'class': 'form-control', 'placeholder': 'Enter Your Email'}),
+            'subject': forms.TextInput(
+                attrs={'class': 'form-control', 'placeholder': 'Enter Message Subject'}),
+            'message': forms.Textarea(
+                attrs={'class': 'form-control', 'placeholder': 'Your Message Here'}),
+        }

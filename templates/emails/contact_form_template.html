@@ -6,28 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="font-size: 1.25rem; color:#333;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">
+<body style="font-size: 1.25rem; color:#333;font-family: Calibri, sans-serif;">
     
-    <p>Hello
-        <span style="color: #f57e87;">
-            <strong>Babushka Bakes</strong>
-        </span>,
-    </p>
-    
+       
     <div style="background-color: #f2f2f2;
     border: 1px solid #cbcbcb;
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 1rem; height: auto; ">
         <p style="color: #333; font-weight: 400;">
             <i>
-                <span><strong>Subject:</strong></span> {{ subject }}<br><br>
-                <span><strong>Message:</strong></span> {{ message }}
+                <p>Hello
+                    <span style="color: #f57e87;">
+                        <strong>Babushka Bakes</strong>
+                    </span>,
+                </p>
+                   <span><strong>Message:</strong></span> {{ message }}
             </i>
         </p>
     </div>
     
     <p>Kind Regards,<br>
         {{ name }}</p>
+        {{ from_email }}
 </body>
 
 </html>
