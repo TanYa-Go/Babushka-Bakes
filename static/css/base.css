@@ -55,7 +55,11 @@ h4 {
     font-size: 1.6rem;
 }
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+  }
 
+  
 .btn {
     font-family: var(--mohave-font);
     font-size: var(--button);
