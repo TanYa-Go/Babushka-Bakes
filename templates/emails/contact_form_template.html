@@ -8,11 +8,7 @@
 
 <body style="font-size: 1.25rem; color:#333;font-family: Calibri, sans-serif;">
     
-       
-    <div style="background-color: #f2f2f2;
-    border: 1px solid #cbcbcb;
-    border-radius: 10px;
-    padding: 1rem; height: auto; ">
+    <div>
         <p style="color: #333; font-weight: 400;">
             <i>
                 <p>Hello
@@ -20,14 +16,17 @@
                         <strong>Babushka Bakes</strong>
                     </span>,
                 </p>
-                   <span><strong>Message:</strong></span> {{ message }}
+                 {{ message }}
             </i>
         </p>
     </div>
     
     <p>Kind Regards,<br>
-        {{ name }}</p>
+        {{ name }}
+    </p>
+    <p>Please reply to: 
         {{ from_email }}
+    </p> 
 </body>
 
 </html>
