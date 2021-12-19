@@ -15,7 +15,6 @@ import os
 import dj_database_url
 from os import path
 
-
 if os.path.exists("env.py"):
     import env
 
@@ -61,6 +60,7 @@ INSTALLED_APPS = [
     # Other
     'crispy_forms',
     'storages',
+    'django_extensions',
 ]
 
 
@@ -238,3 +238,10 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+ }
+

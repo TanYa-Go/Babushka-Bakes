@@ -181,7 +181,13 @@ Footer will be very simple, it will contain navigation menu links for easy navig
 ### **Database Schema**
 
  
+During development I was using SQLite3 database that comes built-in with Django.
 
+For the deployed site the database was switched to Postgress, which is an add-on option in Heroku. 
+
+### **Data Models**
+
+For the application to function as planned it was required to create the following models and their relationships:
 
 ![Database Schema](media/database-schema.png)
 
