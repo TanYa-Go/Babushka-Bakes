@@ -18,7 +18,8 @@ def contact(request):
         message = request.POST['message']
         html_email = render_to_string(
                 'emails/contact_form_template.html',
-                {'name': name, 'from_email': from_email, 'subject': subject, 'message': message})
+                {'name': name, 'from_email': from_email,
+                 'subject': subject, 'message': message})
         if form.is_valid():
             form.save()
             send_mail(

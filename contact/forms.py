@@ -15,11 +15,15 @@ class ContactForm(ModelForm):
          }
         widgets = {
             'name': forms.TextInput(
-                attrs={'class': 'form-control', 'placeholder': 'Your Full Name'}),
+                attrs={'class': 'form-control',
+                       'placeholder': 'Your Full Name'}),
             'email': forms.EmailInput(
-                attrs={'class': 'form-control', 'placeholder': 'Enter Your Email'}),
+                attrs={'class': 'form-control',
+                       'placeholder': 'Enter Your Email'}),
             'subject': forms.TextInput(
-                attrs={'class': 'form-control', 'placeholder': 'Enter Message Subject'}),
+                attrs={'class': 'form-control',
+                       'placeholder': 'Enter Message Subject'}),
             'message': forms.Textarea(
-                attrs={'class': 'form-control', 'placeholder': 'Your Message Here'}),
+                attrs={'class': 'form-control',
+                       'placeholder': 'Your Message Here'}),
         }
