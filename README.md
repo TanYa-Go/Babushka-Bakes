@@ -509,15 +509,15 @@ This set up will allow your site to use Postgres in deployment and sqlite3 in de
     * Icing - Image by Sharon McCutcheon from Pexels, Description from [here](https://www.bettycrocker.com/recipes/marshmallow-buttercream-frosting/544b55b2-da64-4117-95ef-bc267d94976c)
 
 
-### Disclaimer - This website is created for educatioal purposes only and none of the images nor text will be used for commercial purposes
+#### DISCLAIMER - This website is created for educatioal purposes only and none of the images nor text will be used for commercial purposes
   
 
 
-<br><br>
+<br>
 
 ### **Acknowledgements**
 
-A very special thanks goes to my mentor - Simen Dhaelin. I was so lucky to get to learn from him. I am very grateful that he believed in me and that he selflessly shared his knowlegde and his time. I couldn't have done it without you! :)
+A very special thanks goes to my mentor - Simen Daehlin. I was so lucky to get to learn from him. I am very grateful that he believed in me and that he selflessly shared his knowlegde and his time. I couldn't have done it without you! :)
 
 I am very grateful to all the Code Institute Tutors for their help when bugs creeped up. Same goes to all the students and alumni on Slack. 
 
