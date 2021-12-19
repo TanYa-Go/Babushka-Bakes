@@ -24,7 +24,7 @@ custom orders. I created a site that contains a blog - where she can communicate
 * [The Structure Plane](#the-structure-plane)
 * [The Skeleton Plane](#the-skeleton-plane)
     * [Wireframes](#wireframes)
-    * [Database Structure](#database-structure)
+    * [Database Structure](#database-schema)
 * [The Surface Plane](#the-surface-plane)
     * [Design Choices](#design-choices)
         * [Fonts](#fonts)
@@ -309,15 +309,11 @@ To run this project locally on your machine you will need to clone it first. Ple
     import os
 
     os.environ["SECRET_KEY"] = "YOUR_SECRET_KEY"
-    os.environ["DEVELOPMENT"] = "True"
-
-    os.environ["DEFAULT_FROM_EMAIL"] = 'DEFAULT_FROM_EMAIL'
-
     os.environ["STRIPE_PUBLIC_KEY"] = "STRIPE_PUBLIC_KEY"
     os.environ["STRIPE_SECRET_KEY"] = "STRIPE_SECRET_KEY"
     os.environ["STRIPE_WH_SECRET"] = "STRIPE_WH_SECRET"
-    os.environ["STRIPE_CURRENCY"] = "USD"
-
+    os.environ["DATABASE_URL"] = "DATABASE_URL"
+    os.environ.setdefault('DEVELOPMENT', '1')
     ```
     
     To get the above variables you will need to create a Stripe account. Please visit the [Stripe Documentation](https://stripe.com/docs) for more information.
@@ -349,10 +345,11 @@ To run this project locally on your machine you will need to clone it first. Ple
     !You shouldn't set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website. 
 
     ```
+    AWS_STORAGE_BUCKET_NAME = "AWS_STORAGE_BUCKET_NAME"
+    AWS_S3_REGION_NAME = "AWS_S3_REGION_NAME"
     AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID"
     AWS_SECRET_ACCESS_KEY = "AWS_SECRET_ACCESS_KEY"
-    AWS_S3_REGION_NAME = "AWS_S3_REGION_NAME"
-    AWS_STORAGE_BUCKET_NAME = "AWS_STORAGE_BUCKET_NAME"
+       
     USE_AWS = True
     AWS_S3_ADDRESSING_STYLE = "path" - **this setting is specific to the 'eu-central-1' region**
     DATABASE_URL = "This variable is automatically set when adding the Postgres Add on"
@@ -468,15 +465,63 @@ This set up will allow your site to use Postgres in deployment and sqlite3 in de
 
 ### **Code**
 
-Code institute Cris Zielinski's Boutique Ado project was a great help while creating this project
-
-
+* Code institute Cris Zielinski's Boutique Ado project was a base for creating this project
+* Great help with creating a blog was this tutorial from [Codemy](https://www.youtube.com/watch?v=B40bteAMM_M&list=PLCC34OHNcOtr025c1kHSPrnP18YPB-NFi&index=2)
+* [This tutorial](https://www.twilio.com/blog/build-contact-form-python-django-twilio-sendgrid) helped me with creating the contact model 
+* This [Stack Overflow](https://stackoverflow.com/questions/2809547/creating-email-templates-with-django/28476681#28476681) post helped me to implement sending templated html email message 
 
 ### **Media**
 
+* Hero image - Photo by <a href="https://unsplash.com/@ruthgeorgiev?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ruth Georgiev</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+* All the images showing the chef Petra - Photo by SHVETS production from [Pexels](https://www.pexels.com/photo/smiling-woman-preparing-topping-for-muffins-in-kitchen-7525108/)
+
+* Cakes 
+        
+    DESCRIPTIONS 
+     
+     * Cake descriptions taken from [here](//www.greencakes.hr) and translated and somewhat amended
+
+    IMAGES 
+
+    * Cake [Simone](https://www.freepik.com/free-photo/front-view-delicious-chocolate-cake-concept_11753940.htm#page=1&query=chocolate%20cake&position=46&from_view=search) from Freepick
+    * Cake [Aurelie](https://www.freepik.com/free-photo/carrot-cake-with-2020-candles-cup-tea-grey-concrete_6144290.htm#page=1&query=carrot%20cake&position=32&from_view=search) from Freepick
+    * Cake [Nicolette](https://pixabay.com/photos/cake-cheesecake-cinnamon-sticks-1869227/) from Pixabay
+    * Cake [Rosalie](https://pixabay.com/photos/cakes-cheesecake-berry-to-bake-3555184/) from Pixabay
+
+   
+
+* Bread 
+
+    * Sourdough Bread - Image by <a href="https://unsplash.com/@jonathanpielmayer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jonathan Pielmayer</a> on <a href="https://unsplash.com/s/photos/sourdough-bread?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>,  Description from [here](https://www.theclevercarrot.com/2014/01/sourdough-bread-a-beginners-guide/)
+    * Rye Bread - Image from [Unsplash](https://unsplash.com/photos/QnQSxrXFgnw), Description from [here](https://www.occasionallyeggs.com/easy-overnight-dark-rye-bread/)
+    * Foccacia Bread - Image by <a href="https://unsplash.com/@neisanh?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">H Neisan</a> on <a href="https://unsplash.com/s/photos/foccacia?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>, Description from [here](https://www.gimmesomeoven.com/rosemary-focaccia-bread/)
+  
+    * Brioche Bread - Image by <a href="https://unsplash.com/@element5digital?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Element5 Digital</a> on <a href="https://unsplash.com/s/photos/brioche?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>, Description from [here](https://www.homestratosphere.com/types-of-bread/#Brioche_Bread)
+  
+  
+
+* Blog 
+
+    * Sourdough Bread - Image [from Pexels](https://www.pexels.com/photo/sliced-bread-on-brown-wooden-surface-1374586/), Description from [here](https://www.thekitchn.com/how-to-make-sourdough-bread-224367)
+
+    * Donuts - image and description from [here](https://handletheheat.com/old-fashioned-sour-cream-doughnuts/)
+
+    * Icing - Image by Sharon McCutcheon from Pexels, Description from [here](https://www.bettycrocker.com/recipes/marshmallow-buttercream-frosting/544b55b2-da64-4117-95ef-bc267d94976c)
+
+
+### Disclaimer - This website is created for educatioal purposes only and none of the images nor text will be used for commercial purposes
+  
+
+
+<br><br>
 
 ### **Acknowledgements**
 
+A very special thanks goes to my mentor - Simen Dhaelin. I was so lucky to get to learn from him. I am very grateful that he believed in me and that he selflessly shared his knowlegde and his time. I couldn't have done it without you! :)
+
+I am very grateful to all the Code Institute Tutors for their help when bugs creeped up. Same goes to all the students and alumni on Slack. 
+
+In the end I must thank my parents who were minding my son while I was studying and working on this and previous projects. 
 
 
 
