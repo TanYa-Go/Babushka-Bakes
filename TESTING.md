@@ -34,6 +34,15 @@ All the javascript were validated with the [Javascript Validator](https://jshint
 ### **Python**
 All the python files have passed the [Python validator](pep8) without issues.
 
+Most common warnings were 
+* Blank line contains whitespace
+* Trailing whitspace
+* Line too long - some of which could not be corrected as it would break a varable 
+* Missing docstring
+* Unused imports
+* No new line at the end of file
+* Expected two blank lines, found one
+* Too many blank lines
 
 
 ## **Responsiveness**

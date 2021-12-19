@@ -10,24 +10,24 @@ from profiles.models import UserProfile
 import json
 import time
 
+
 class StripeWH_Handler:
     """Handle Stripe webhooks"""
 
     def __init__(self, request):
         self.request = request
-        
-        
+
     def _send_confirmation_email(serlf, order):
         """ Send the user a confirmation email """
         cust_email = order.email
         subject = render_to_string(
             'checkout/confirmation_emails/confirmation_email_subject.txt',
-            {'order':order})
-        
+            {'order': order})
+
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
-            {'order':order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+
         send_mail(
             subject,
             body,
@@ -49,7 +49,7 @@ class StripeWH_Handler:
         """
         intent = event.data.object
         pid = intent.id
-        cart = intent.metadata.cart 
+        cart = intent.metadata.cart
         save_info = intent.metadata.save_info
 
         billing_details = intent.charges.data[0].billing_details
@@ -91,7 +91,7 @@ class StripeWH_Handler:
                     street_address2__iexact=shipping_details.address.line2,
                     county__iexact=shipping_details.address.state,
                     grand_total=grand_total,
-                    original_cart =cart ,
+                    original_cart=cart,
                     stripe_pid=pid,
                 )
                 order_exists = True
@@ -118,7 +118,7 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
-                    original_cart =cart ,
+                    original_cart=cart,
                     stripe_pid=pid,
                 )
                 for item_id, item_data in json.loads(cart).items():

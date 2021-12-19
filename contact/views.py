@@ -17,11 +17,17 @@ def contact(request):
         subject = request.POST['subject']
         message = request.POST['message']
         html_email = render_to_string(
-                'emails/contact_form_template.html', {'name': name, 'from_email': from_email, 'subject': subject, 'message': message})
+                'emails/contact_form_template.html',
+                {'name': name, 'from_email': from_email, 'subject': subject, 'message': message})
         if form.is_valid():
             form.save()
             send_mail(
-                subject, message, from_email, ['tanja.godinic@gmail.com'], html_message=html_email, fail_silently=False)
+                subject,
+                message,
+                from_email,
+                ['tanja.godinic@gmail.com'],
+                html_message=html_email,
+                fail_silently=False)
             return HttpResponseRedirect('/contact?submitted=True')
     else:
         form = ContactForm
