@@ -34,22 +34,29 @@ All the javascript were validated with the [Javascript Validator](https://jshint
 ### **Python**
 All the python files have passed the [Python validator](pep8) without issues.
 
-Most common warnings were 
+Most common errors/warnings were:
 * Blank line contains whitespace
 * Trailing whitspace
-* Line too long - some of which could not be corrected as it would break a varable 
+* Line too long - some of which could not be corrected as it would break the code
 * Missing docstring
 * Unused imports
 * No new line at the end of file
 * Expected two blank lines, found one
 * Too many blank lines
 
+Majority of the errors and warnings was fixed, however some still remain:
+* "Line too long" in migration files
+* "Line too long" in settings file
+* "Avoid using null=True on string-based fields such CharField" in some models
+
+
+
 
 ## **Responsiveness**
 
 
 #### Test 
-I have tested responsiveness during development with developer inspector tools. Then I have tested with help of the apps called [Responsively](https://responsively.app/)
+I was regularly checking responsiveness during development with developer inspector tools. Then I have tested with help of the app called [Responsively](https://responsively.app/)
 Test was also done on the actual devices: Lenovo Laptop 17.3" / Alpha a1 20+ / Xiaomi Redmi 9t /  iPhone 7 / iPhone 8 / iPhone 10 / iPad 
 
 #### Result 
@@ -63,6 +70,8 @@ Test result is satisfactory, everything is functioning as intended.
 
 
 ## **User Stories**
+
+
 ## **Functionality**
 
 

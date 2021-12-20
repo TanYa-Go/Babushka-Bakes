@@ -82,25 +82,26 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 ### **User Stories**
 
-| Site   Visitor | Easily register for an account               | Have my account and view my   profile                                               |
-|----------------|----------------------------------------------|-------------------------------------------------------------------------------------|
-|                | Easily login and logut                       | Access my account                                                                   |
-|                | Easily recover my password if neccesary      | Log back in to my account if I forget my password                                   |
-|                | Contact the store owner                      | Ask a question regarding products or place a custom order                           |
-|                | Read the blog                                | Find some reciepts that I can try                                                   |
-| Shopper        | View the products in the shop                | Choose what to buy                                                                  |
-|                | Search for products by name or description   | Find them easily without going through all products                                 |
-|                | See product details                          | Find out if I want to purchase it                                                   |
-|                | Add product to the cart                      | Purchase it                                                                         |
-|                | Adjust the items in cart                     | Purchase  only products and amounts   that I want                                   |
-|                | See total of my cart at any time             | Control my spending                                                                 |
-|                | Make a safe purchase                         | Trust that my payment details are confidential                                      |
-|                | Receive an email confirmation after purchase | Have the details of my order in case I need to contact the shop                     |
-|                | Contact the store owner                      | Ask a question regarding products or place a custom order                           |
-|                | Read the blog                                | Find some reciepts that I can try                                                   |
-| Admin/Staff    | Add/edit/remove products from the shop       | Keep my shop up to date with my offer                                               |
-|                | Add/edit/remove blog posts                   | Inform my cutomers about news and share receipts                                    |
-|                | Receive emails from the contact form         | Take orders and reply to my customers, keep the details for future   markeing etc.. |
+| As   a        | I want to be able to                         | So that I can…                                                                      |
+|---------------|----------------------------------------------|-------------------------------------------------------------------------------------|
+| Site Visitor  | Easily register for an account               | Have my account and view my profile                                                 |
+|               | Easily login and logut                       | Access my account                                                                   |
+|               | Easily recover my password if neccesary      | Log back in to my account if I forget my password                                   |
+|               | Contact the store owner                      | Ask a question regarding products or place a custom order                           |
+|               | Read the blog                                | Find some reciepts that I can try                                                   |
+| Shopper       | View the products in the shop                | Choose what to buy                                                                  |
+|               | Search for products by name or description   | Find them easily without going through all products                                 |
+|               | See product details                          | Find out if I want to purchase it                                                   |
+|               | Add product to the cart                      | Purchase it                                                                         |
+|               | Adjust the items in cart                     | Purchase  only products and amounts   that I want                                   |
+|               | See total of my cart at any time             | Control my spending                                                                 |
+|               | Make a safe purchase                         | Trust that my payment details are confidential                                      |
+|               | Receive an email confirmation after purchase | Have the details of my order in case I need to contact the shop                     |
+|               | Contact the store owner                      | Ask a question regarding products or place a custom order                           |
+|               | Read the blog                                | Find some reciepts that I can try                                                   |
+| Admin / Staff | Add/edit/remove products from the shop       | Keep my shop up to date with my offer                                               |
+|               | Add/edit/remove blog posts                   | Inform my cutomers about news and share receipts                                    |
+|               | Receive emails from the contact form         | Take orders and reply to my customers, keep the details for future   markeing etc.. |
 
 [Back to Top](#table-of-contents)
 
