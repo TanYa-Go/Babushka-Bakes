@@ -277,7 +277,7 @@ Messages from the site owner are written in Dancing Script fornt to feel more pe
 
 # **Testing**
 
-The full testing procedure can be found in the [Testing](testing.md) file
+The full testing procedure can be found in the [Testing](TESTING.md) file
 
 
 
