@@ -175,17 +175,22 @@ Test passed, the function works as expected.
 ## **The Blog**
 
 * User Story:
-    * I want to be able to read the latest blog posts, so I can find some reciepts that I can try to bake myself   
+    * *I want to be able to read the latest blog posts, so I can find some reciepts that I can try to bake myself*  
 
-The blog is accesible by the Navbar menu link. /The link leads to the **Blog Page** that has all the blog posts listed. 
+The blog is accesible by the navbar menu link. The link leads to the **Blog Page** which has all the blog posts listed. 
 
-**Logged in user**  can see the options to create a new blog post, edit and/or delete an existing blog post.
+ A **Logged in user**  can see the options to create a new blog post, edit and/or delete an existing blog post.
 
 All buttons were tested and they lead to relevant pages.
 
-**User that is not logged in** will not see those options and will only be able to read the blog. 
+A **User that is not logged in** will not see those options and will only be able to read the blog. 
 
+## **The Shop**
 
+ User Stories:
+
+* *I want to be able to view the products in the shop so that I can choose what to buy*  
+* *See product details	Find out if I want to purchase it*
 
 
 <br><br>
@@ -195,3 +200,4 @@ All buttons were tested and they lead to relevant pages.
 
 
 # **Bugs**
+

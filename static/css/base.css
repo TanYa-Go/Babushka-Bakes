@@ -28,8 +28,6 @@ body * {
     font-size: 1.6rem;
 }
 
-
-
 body {
     background: url('https://babushka-bakes.s3.eu-central-1.amazonaws.com/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -57,12 +55,12 @@ h4 {
 
 .dropdown:hover .dropdown-menu {
     display: block;
-  }
+}
 
-  .dropdown-item {
-      font-family: sans-serif;
-  }
-  
+.dropdown-item {
+    font-family: sans-serif;
+}
+
 .btn {
     font-family: var(--mohave-font);
     font-size: var(--button);
@@ -344,7 +342,7 @@ footer {
 .delivery-txt {
     margin-bottom: 7rem;
     margin-top: 5rem;
-    
+
 }
 
 .delivery-txt p {
@@ -561,7 +559,7 @@ allauth-form-inner-content button,
         font-size: 1.5rem;
     }
 
-     #delivery-banner h4 {
+    #delivery-banner h4 {
         font-size: 1.5rem;
     }
 
@@ -626,6 +624,7 @@ allauth-form-inner-content button,
     .delivery-txt p {
         font-size: 1.8rem;
     }
+
     .address {
         padding: 1rem;
         font-size: 1.8rem;
@@ -635,14 +634,15 @@ allauth-form-inner-content button,
         margin-top: 5rem;
 
     }
+
     .post-body p {
         font-size: 1.8rem;
     }
 
-.message-container {
-    position: fixed;
-    top: 7.2rem;
-    right: 0.5rem;
-    z-index: 99999999999;
-}
+    .message-container {
+        position: fixed;
+        top: 7.2rem;
+        right: 0.5rem;
+        z-index: 99999999999;
+    }
 }

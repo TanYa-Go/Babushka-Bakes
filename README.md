@@ -258,6 +258,7 @@ Messages from the site owner are written in Dancing Script fornt to feel more pe
 * [Bootstrap](https://getbootstrap.com/)
 * [Google Fonts](https://fonts.google.com/)
 * [jQuery](https://jquery.com/)
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
 
 ### **Tools**
 * [Git](https://git-scm.com/)
@@ -268,7 +269,7 @@ Messages from the site owner are written in Dancing Script fornt to feel more pe
 * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 * [Python Validator](http://pep8online.com/)
 * [techsini](http://techsini.com/)
-* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/)
+* 
 
 [Back to Top](#table-of-contents)
 
@@ -277,7 +278,7 @@ Messages from the site owner are written in Dancing Script fornt to feel more pe
 
 # **Testing**
 
-The full testing procedure can be found in the [Testing](TESTING.md) file
+The full testing procedure can be found in the [TESTING](TESTING.md) file
 
 
 
@@ -291,7 +292,7 @@ The full testing procedure can be found in the [Testing](TESTING.md) file
 
 To run this project locally on your machine you will need to clone it first. Please follow the steps:
 
-1. From the application's repository, click the "code" button and download the zip of the repository.
+1. From the application's repository, click the **code** button and download the zip of the repository.
     Alternatively, you can clone the repository using the following line in your terminal:
 
     ``` 
@@ -342,7 +343,7 @@ To run this project locally on your machine you will need to clone it first. Ple
 1. Once the app is created click on the resources button and under Add-ons, look for the Heroku Postgres to attach a postgres database to your project.
     Select the Hobby Dev - Free plan and click 'Submit order form'
 
-1. Scroll back up and click "settings". Scroll down and click "Reveal config vars". Set up the same variables as in your env.py ():
+1. Scroll back up and click **settings**. Scroll down and click **Reveal config vars**. Set up the same variables as in your env.py ():
     !You shouldn't set the DEBUG variable in under config vars, only in your env.py to prevent DEBUG being active on live website. 
 
     ```
@@ -387,7 +388,7 @@ To run this project locally on your machine you will need to clone it first. Ple
     python3 manage.py createsuperuser
     ```
 
-    Login to the admin panel and mark your email address as verified, check the boxes 'Verified and primary"
+    Login to the admin panel and mark your email address as verified, check the boxes **Verified and primary**
 
 1. Load the data into your newly created database by using the following command: 
 
@@ -441,12 +442,12 @@ This set up will allow your site to use Postgres in deployment and sqlite3 in de
     ```
     heroku config:set DISABLE_COLLECTSTATIC=1
     ```
-1. Go back to HEROKU and click "Deploy" in the navigation. 
+1. Go back to HEROKU and click **Deploy** in the navigation. 
 1. Scroll down to Deployment method and Select Github. 
 1. Look for your repository and click connect. 
-1. Under automatic deploys, click 'Enable automatic deploys'
+1. Under automatic deploys, click **Enable automatic deploys**
 
-1. Just beneath, click "Deploy branch". Heroku will now start building the app. When the build is complete, click "view app" to open it.
+1. Just beneath, click **Deploy branch**. Heroku will now start building the app. When the build is complete, click **view app** to open it.
 1. In order to commit your changes to the branch, use git push to push your changes. 
 
 
@@ -518,9 +519,9 @@ This set up will allow your site to use Postgres in deployment and sqlite3 in de
 
 ### **Acknowledgements**
 
-A very special thanks goes to my mentor - Simen Daehlin. I was so lucky to get to learn from him. I am very grateful that he believed in me and that he selflessly shared his knowlegde and his time. I couldn't have done it without you! :)
+A very special thanks goes to my mentor - [Simen Daehlin](https://github.com/Eventyret). I was so lucky to get to learn from him. I am very grateful that he believed in me and that he selflessly shared his knowlegde and his time. I couldn't have done it without you! :)
 
-I am very grateful to all the Code Institute Tutors for their help when bugs creeped up. Same goes to all the students and alumni on Slack. 
+I am very grateful to all the [Code Institute](https://codeinstitute.net/global/) Tutors for their help when bugs creeped up. Same goes to all the students and alumni on Slack. 
 
 In the end I must thank my parents who were minding my son while I was studying and working on this and previous projects. 
 
