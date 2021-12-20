@@ -56,13 +56,16 @@ Majority of the errors and warnings was fixed, however some still remain:
 
 
 #### Test 
-I was regularly checking responsiveness during development with developer inspector tools. Then I have tested with help of the app called [Responsively](https://responsively.app/)
+I was regularly checking responsiveness during development with Chrome developer inspector tools.\
+I have tested the deployed site with help of the app called [Responsively](https://responsively.app/)
 Test was also done on the actual devices: Lenovo Laptop 17.3" / Alpha a1 20+ / Xiaomi Redmi 9t /  iPhone 7 / iPhone 8 / iPhone 10 / iPad 
 
 #### Result 
-The page looks satisfactory on all tested devices and its fully responsive. The Navigation menu collapses on tablet and mobile sizes and expands on desktop size. Hero image is not destorted and displays nicely on all screen sizes tested. 
+The page looks satisfactory on all tested devices and is fully responsive. The Navigation menu collapses on tablet and mobile sizes and expands on desktop size. Hero image is not destorted and displays nicely on all screen sizes tested. 
 
-All images are responsive, they are rendering well on all screen sizes tested without overflowing or distorsion.
+Images on all other pages are responsive, they are rendering well on all screen sizes tested without overflowing or distorsion.
+Text responsiveness is satisfactory.
+
 
 
 #### Conclusion
@@ -70,6 +73,45 @@ Test result is satisfactory, everything is functioning as intended.
 
 
 ## **User Stories**
+
+
+* *Site visior/shopper's goal is to be able to easily browse the website on any device so that they can quickly find what they are looking for*
+
+### **Test needed for: Navigation and rensponsiveness**
+
+Responsiveness was covered in the above section and the results are satisfactory.
+
+To test navigation, I have tested the following:
+
+Navigation menu items 
+
+* Clicked on each navigation menu item to make sure that they each lead to their respecive pages. 
+
+* Clicked on the "View Shop" and "Contact me" button to make sure that they leed to their respective pages. 
+
+Footer menu items 
+
+* Clicked on each navigation menu item to make sure that they lead to their respecive pages. 
+
+Social Media Icons
+
+* Clicked on each icon in the footer to make sure that they lead to their respecive pages. 
+
+Buttons
+
+* Clicked on each button to make sure they will lead to the said page. 
+
+Brand Name 
+
+* When user is on any page except home page they can click on the Brand Name Logo and be redirected back to the home page. 
+
+
+### Result : 
+
+No links broken, all pages open as expected.\
+**Shop** link opens a dropdown menu on hover, as expected.\
+Social media icons lead to their respective generic page and open in a separate tab.\
+All buttons work as expected and lead to their respective links.
 
 
 ## **Functionality**
