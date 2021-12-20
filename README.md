@@ -57,7 +57,7 @@ custom orders. I created a site that contains a blog - where she can communicate
 
 * #### **Site Visitor / Shopper**
 
-   Site visior/shopper's goal is to be able to easily browse the website on any device so that they can quickly find what they are   looking for. Whether that is to buy products or just find some inspiration for their own baking. The easier is to find the contact information to contact the site owner, the better experience they will have. They need to clearly see what is the benefit of signing up for the account and what benefits will that bring them. 
+   Site visior/shopper's goal is to be able to easily browse the website on any device so that they can quickly find what they are looking for. Whether that is to buy products or just find some inspiration for their own baking. The easier is to find the contact information to contact the site owner, the better experience they will have. They need to clearly see what is the benefit of signing up for the account and what benefits will that bring them. 
 
 * #### **Admin/Staff**
 

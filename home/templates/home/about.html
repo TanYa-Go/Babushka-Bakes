@@ -7,11 +7,10 @@
     <div class="row">
         <div class="col-12 text-center mt-4">
             <h2 class="logo-font">About Me</h2>
-            <hr class="w-50 mb-3">
+            <hr class="w-50">
             <h3 class="message-font">
                 I absloutely love what I do and <i class="fas fa-heart fa-md"></i> is the main ingredient in my baking
             </h3>
-
         </div>
     </div>
 </div>
@@ -35,7 +34,7 @@
         <div class="col-12">
             <div class="delivery-txt text-justify">
                 <hr class="w-50 mb-3">
-                <p class="biography text-center">
+                <p class="biography text-justify p-4">
                     <br />
                     Perhaps we've met before or maybe you are here for the first time,
                     either way, I hope you find something that suits your taste!
@@ -66,7 +65,7 @@
                     Bon appetit!
                     <br /><br />
                     Love,
-                    <br /><br />
+                    <br />
                     <span class="message-font">Petra</span>
 
                 </p>
@@ -76,7 +75,7 @@
 </div>
 
 <div class="container">
-    <div class="row mt-4 mb-4 text-center">
+    <div class="row mb-4 text-center">
         <div class="col-12 col-md-4 mb-3">
             <img src="{{ MEDIA_URL }}6.jpg" class="responsive-img" alt="chef Petra">
         </div>
@@ -94,6 +93,7 @@
 <p class="text-center mb-4">
     <a href="{% url 'products' %}" class="text-white browse btn btn-secondary mt-2 ml-auto mb-4 mt-4">Browse Shop</a>
 </p>
+<br>
 
 {% include 'includes/footer.html' %}
 {% endblock %}

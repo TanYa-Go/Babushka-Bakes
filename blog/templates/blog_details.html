@@ -4,7 +4,7 @@
 <div class="overlay"></div>
 <div class="container mt-3">
     <div class="row">
-        <div class="col-12 text-center">
+        <div class="col-12 text-center mt-4">
             <h2 class="mt-4">{{ post.title }}</h2>
             {% if request.user.is_superuser %}
             <small>By: {{ post.author }} </small> - <a href="{% url 'edit_post' post.pk %}">Edit</a>
@@ -17,7 +17,7 @@
     </div>
     <div class="row">
         <div class="col-12 post-body">
-            <p>{{ post.body|linebreaksbr }}</p>
+            <p class="p-4">{{ post.body|linebreaksbr }}</p>
         </div>
     </div>
     <hr>
