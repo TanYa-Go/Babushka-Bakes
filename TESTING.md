@@ -32,9 +32,9 @@ All the javascript were validated with the [Javascript Validator](https://jshint
 
 
 ### **Python**
-All the python files have passed the [Python validator](pep8) without issues.
+All the python files were validated with the [Python validator](pep8)
 
-commMost common errors/warnings were:
+Most common errors / warnings were:
 * Blank line contains whitespace
 * Trailing whitspace
 * Line too long - some of which could not be corrected as it would break the code
