@@ -192,7 +192,26 @@ For the application to function as planned it was required to create the followi
 
 ![Database Schema](media/database-schema.png)
 
+**Blog Post**
 
+| Name     | Database Key | Field Type          | Validation                     |
+|----------|--------------|---------------------|--------------------------------|
+| Title    | title        | models.CharField    | max_length=254                 |
+| Subtitle | subtitle     | models.CharField    | max_length=254                 |
+| Author   | author       | models.ForeignKey   | User, on_delete=models.CASCADE |
+| Body     | body         | models.TextField()  |                                |
+| Image    | image        | models.ImageField   | (null=True, blank=True)        |
+
+
+**Category**
+
+| Name            | Database Key  | Field Type | Validation                               |
+|-----------------|---------------|------------|------------------------------------------|
+| Name            | name          | CharField  | max_length=254                           |
+| Friendly   Name | friendly_name | CharField  | max_length=254,   null=True, blank=False |
+
+
+**Product**
 ### **Wireframes**
 
 [Home Page](media/home.png)\
