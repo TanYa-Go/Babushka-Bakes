@@ -54,18 +54,18 @@ Majority of the errors and warnings was fixed, however some still remain, becasu
 # **Responsiveness**
 
 
-## **Test**
+### **Test**
 I was regularly checking responsiveness during development with Chrome developer inspector tools.\
 I have tested the deployed site with help of the app called [Responsively](https://responsively.app/)
 Test was also done on the actual devices: Lenovo Laptop 17.3" / Alpha a1 20+ / Xiaomi Redmi 9t /  iPhone 7 / iPhone 8 / iPhone 10 / iPad 
 
-## **Result**
+### **Result**
 The page looks satisfactory on all tested devices and is fully responsive. The Navigation menu collapses on tablet and mobile sizes and expands on desktop size. Hero image is not destorted and displays nicely on all screen sizes tested. 
 
 Images on all other pages are responsive, they are rendering well on all screen sizes tested without overflowing or distorsion.
 Text responsiveness is satisfactory.
 
-## **Conclusion**
+### **Conclusion**
 Test result is satisfactory, everything is functioning as intended.
 
 <br>
@@ -111,14 +111,14 @@ To test navigation, I have tested the following:
 * To return to the **Home** Page, the user can click on the brand name in the top left corner and will be redirected to the home page. 
 
 
-## **Result** : 
+### **Result**  
 
 No broken links in navbar, all pages open as expected.\
 **Shop** link opens a dropdown menu on hover, as expected.\
 Social media icons lead to their respective generic page and open in a separate tab.\
 All buttons work as expected and lead to their respective pages.
 
-## **Conclusion**
+### **Conclusion**
 Test passed, all functions work as expected.
 
 <br><br>
@@ -134,6 +134,7 @@ This is first time visitor as well as a returning visitor who hasn't created an 
         * *Easily login and logut* 
         * *Easily recover my password if neccesary*
 
+### **Test**
 
 The **My Account** icon is placed in the website header and it is clearly visible and accessible from any page of the website.
 
@@ -190,12 +191,16 @@ A **User that is not logged in** will not see those options and will only be abl
 
 ### **Conclusion**
 
+<br>
+
 ## **The Shop**
 
  User Stories:
 
 * *I want to be able to view the products in the shop so that I can choose what to buy*  
 * *I want to be able to see product details	so that I can find out if I want to purchase it*
+
+<br>
 
 ## **Search Functionality**
 
@@ -218,7 +223,9 @@ User Story:
 ### **Conclusion**
 Test passed, the functionality works as planned.
 
-## **Search Functionality**
+<br>
+
+## **Shopping Cart**
 <br><br>
 
 # **Functionality**
