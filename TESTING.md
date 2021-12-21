@@ -203,11 +203,15 @@ A **User that is not logged in** will not see those options and will only be abl
 
 # **Important**
 
-During the process of copying the data from SQLite3 database to Postgress, I have accidentally used the wrong command and commited my db.json file along with the auth permissions. When I realized what had happened, I had already made many more commits on top of that one so it was not possible to just revert a commit. I have searched for the best solution to rectify this and have found that there is a way of going into the git commit history and remove it from the commits, either by the rebase or the cherry-pick commands. However since there were many more commits commited after that one, I believe that it takes much more experience to tackle this issue and as I was coming close to the submit deadline I didn't not dare to mess with the commit history. I have also consulted with my mentor and I decided to take his advice. I removed the existing db.json file, and created a new fixture file for each app separately, to be certain to not include the auth perissions. For that I have used the following  command: 
+During the process of copying the data from the SQLite3 database to the Postgress database, I have accidentally used the wrong command and commited my db.json file along with the auth permissions to GitHub. When I realized what had happened, I had already made many more commits on top of that one so it was not possible to just revert a commit. I have searched for the best solution to rectify this and have found that there is a way of going into the git commit history and remove it from the commits, either by the rebase or the cherry-pick commands. However, since the file was in the git history for significant amount of time and there were many more commits done after that one, I believe that it takes much more experience to tackle this issue. I was coming very close to the submit deadline and I did not dare to mess with the commit history. I have also consulted my mentor and I decided to take his advice. I removed the existing db.json file, and created a new fixture file for each app separately, to be certain to not include the auth perissions. For that I have used the following  command: 
 
     ./manage.py dumpdata <app name> > <app name>.json
 
-This created new json files that were safe to commit as they did not contain any sensitive info. Since the db.json file with the sensitive information was in the git history for significant amount of time I have also decided to rotate my secret keys, so I created a new secret key for Gitpod and for Heroku, to make sure the app is safe. 
+This created new json files that were safe to commit as they did not contain any sensitive info. Since the db.json file with the sensitive information was in the git history for quite a long time, I have also decided to rotate my secret keys, so I created a new secret key for Gitpod and for Heroku. 
+
+I understand the seriousness of this mistake and the damage it could have done if this was a real world application with real users details. I sincerelly hope that rectifying it will be sufficient to show that I have learned from this experience and dealt with the issue the best way I could.   
+
+ 
 
 
 
