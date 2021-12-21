@@ -92,7 +92,7 @@ To test navigation, I have tested the following:
 
 * Clicked on each navigation menu item to make sure that they each lead to their respective pages. 
 
-* Clicked on the **View Shop** and **Contact Me** buttons to make sure that they leed to their respective pages. 
+* Clicked on the **View Shop** and **Contact Me** buttons to make sure that they lead to their respective pages. 
 
 **Footer menu items**
 
@@ -118,6 +118,7 @@ No broken links in navbar, all pages open as expected.\
 Social media icons lead to their respective generic page and open in a separate tab.\
 All buttons work as expected and lead to their respective pages.
 
+## **Conclusion**
 Test passed, all functions work as expected.
 
 <br><br>
@@ -127,12 +128,11 @@ Test passed, all functions work as expected.
 
 This is first time visitor as well as a returning visitor who hasn't created an account previously.
 
-* User Story:
+* User Stories:
     * *As a	site visitor I want to be able to:*
          * *Easily register for an account so that I can have my account and view my profile.*
         * *Easily login and logut* 
         * *Easily recover my password if neccesary*
-
 
 
 The **My Account** icon is placed in the website header and it is clearly visible and accessible from any page of the website.
@@ -147,9 +147,10 @@ In case the user forgets their password, they can click on the **Forgot Password
 
 When finished, the user can easily log out by clicking the **Logout** link in the **My Account** menu. They will be asked to confrim if they really want to logout in case they have clicked this link by accident.  
 
-### **Result** : 
-I have followed the proces several times and creates several users. The process is simple and intuitive and the visitor can create their account with a few clicks, easily manage their profile and logout.
+### **Result**  
+I have followed the proces several times and created several users. The process is simple and intuitive and the visitor can create their account with a few clicks, easily manage their profile and logout.
 
+### **Conclusion**
 Test passed, the function works as expected. 
 
 
@@ -158,19 +159,21 @@ Test passed, the function works as expected.
 ## **Contact**
 
 * User Story:
-    * *As a user I want to contact the store owner to ask a question regarding products or place a custom order*
+    * *As a user I want to be able to contact the store owner to ask a question regarding products or place a custom order*
 
-The user can contact the site owner easily with a few options. There is a **Contact** menu item in the navabr that will lead to the **Contact Page**. There is also a menu link in the footer, available on each page, apart from home page, that also leads to the Contact Page. On the home page, the user has the **Contact Me** button, as well as the navbar menu link to Contact Page.
+The user can contact the site owner easily with a few options. There is a **Contact** menu item in the navabr that will lead to the **Contact Page**. There is also a menu link in the footer, available on each page, apart from the home page, that also leads to the Contact Page. On the home page, the user has the **Contact Me** button, as well as the navbar menu link to Contact Page.
 
 When on the contact page, the user has a few options for contact. They can fill out the contact form and their message will land directly in the site owners email.\
-There is a contact number, an email address as well as the postal address, should that be their preffered way of contacting. 
+There is a contact number, an email address as well as the postal address, should that be their preffered way of contacting the site owner. 
 
-The user also has the **Social Media** option to contact the site owner. Currently the links lead to generic pages but in the future, the actual Petra's social media handles are to be added. 
+The user also has the **Social Media** option to contact the site owner. Currently the links lead to the generic pages but in the future, Petra's actual social media handles will be added. 
 
-### **Result** : 
+### **Result** 
 I have tested all the links and they all correctly lead to the Contact Page. I have also sent several emails from the contact form and confirmed that the email is indeed sent, and recieved by the site owner (my own email in this case).
 
+### **Conclusion**
 Test passed, the function works as expected. 
+<br><br>
 
 ## **The Blog**
 
@@ -185,14 +188,37 @@ All buttons were tested and they lead to relevant pages.
 
 A **User that is not logged in** will not see those options and will only be able to read the blog. 
 
+### **Conclusion**
+
 ## **The Shop**
 
  User Stories:
 
 * *I want to be able to view the products in the shop so that I can choose what to buy*  
-* *See product details	Find out if I want to purchase it*
+* *I want to be able to see product details	so that I can find out if I want to purchase it*
 
+## **Search Functionality**
 
+User Story:
+
+ * *I want to be able to search for products by name or description	so that I can find them easily without needing to go through all products*
+
+ The search input is located at the top of every page which makes it easy for user to search for required items at any time. On mobile and tablet screens the search option is also visible in the page header and it will open an input field when clicked.  
+
+ ### **Test**
+
+ To test the search functionality I have tried inputting random words into search input field. 
+ I also tried the same word with capital letter
+ I have also tried to search without inputting something in the search field. 
+
+ ### **Result**
+ * If the searched word is a part of a product or its description, this product will display on the page. If they are not, we get no results.
+* Search functionality is not case sensitive.
+
+### **Conclusion**
+Test passed, the functionality works as planned.
+
+## **Search Functionality**
 <br><br>
 
 # **Functionality**
@@ -200,6 +226,10 @@ A **User that is not logged in** will not see those options and will only be abl
 
 
 # **Bugs**
+
+
+
+
 
 # **Important**
 

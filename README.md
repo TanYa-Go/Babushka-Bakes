@@ -529,6 +529,7 @@ This set up will allow your site to use Postgres in deployment and sqlite3 in de
 
     * Icing - Image by Sharon McCutcheon from Pexels, Description from [here](https://www.bettycrocker.com/recipes/marshmallow-buttercream-frosting/544b55b2-da64-4117-95ef-bc267d94976c)
 
+* [Favicon](https://www.flaticon.com/free-icon/cupcake_1082517?term=cupcake&page=5&position=30&page=5&position=30&related_id=1082517&origin=search) made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 
 #### DISCLAIMER - This website is created for educatioal purposes only and none of the images nor text will be used for commercial purposes
   

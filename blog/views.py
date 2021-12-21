@@ -5,7 +5,6 @@ from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import BlogPostForm, EditPostForm
 
-
 # Create your views here.
 
 
