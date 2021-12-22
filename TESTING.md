@@ -203,18 +203,19 @@ User Stories:
 * *I want to be able to see product details	so that I can find out if I want to purchase it*
 
 The user can access the **Products** page from the Home page directly by clicking on the **View Shop** button or 
-through the **Shop** navbar link. When they hover ove the Shop button the dropdown menu will  appear and the user can choose which category of products they wish to go to.
+through the **Shop** navbar link.\
+When they hover ove the Shop button the dropdown menu will  appear and the user can choose which category of products they wish to go to.
 Or they have the option to click on **All Products"
 
 ### **Test**
 
-I have tested whether all links and buttons lead to the products page.
+I have tested whether all links and buttons lead to the products page.\
 From the Products page I have tested whether all the links and images when clicked, lead to the **Product Details** page
 
 ### **Result**
 
-All links and buttons do indeed open the **Produts** page
-The navbar dropdown menu opens on hover and displays product categories
+All links and buttons do indeed open the **Produts** page\
+The navbar dropdown menu opens on hover and displays product categories\
 All links and product images do lead to the **Product Detials** page when clicked
 
 
@@ -232,13 +233,20 @@ User Stories:
 * *I want to be able to make a safe purchase so that I can trust that my payment details are confidential*
 * *I want to be able to receive an email confirmation after purchase so that I can have the details of my order in case I need to contact the shop*
 
+#### **Add To Cart**
+To purchase the products the shopper needs to navigate to the **Product details** page where they have the option to add a product to cart.\
+They can choose the amount that they want either by typing it into the input field or by clicking up and down arrows.\
+The message should appear to tell them that their action was successful.\
+To access the shopping cart the user can either click on the **Secure Checkout** button in the popup message or by clicking on the shopping cart icon on top of the screen.\
+In the shopping cart the user can review their order and update if required - by using **Update** and **Remove** buttons.\
+As the user ads products to the shopping cart, the total amount should be shown in the page header under the cart icon at all times.\
 
-To purchase the products the shopper needs to navigate to the product details page where they have the option to add a product to cart.
-They can choose the amount that they want either by typing it into the input field or by clicking up and down arrows
-The message should appear to tell them of their action.
-To access the shopping cart the user can either click on the **Secure Checkout** button in the popup message or by clicking on the shopping cart icon on top of the screen
-In the shopping cart the user can review their order and update if required - by using **Update** and **Remove** buttons.
+#### **Checkout**
+To purchase the products the user clicks on the **Secure Checkout** button which should lead to the chekcout page.\
+On the checkout page the user needs to fill out their personal information, delivery information and payment details, and click **Complete Order** button.
+The message should pop up telling the user that the action was successful and that they will receive confrimation email.
 
+### **Conclusion**
 
 Test passed, functionality works as expected.
 
@@ -266,9 +274,7 @@ User Story:
 Test passed, the functionality works as planned.
 
 <br>
-
-## **Shopping Cart**
-<br><br>
+<br>
 
 # **Functionality**
 
