@@ -32,6 +32,7 @@ All the javascript were validated with the [Javascript Validator](https://jshint
 
 
 ### **Python**
+
 All the python files were validated with the [Pep8 Python validator](pep8)
 
 Most common errors / warnings were:
@@ -86,12 +87,11 @@ Navigation bar is visible on all pages of the website  which makes it easy for u
 
 On smaller sizes, the navigation menu collapses to a hamburger button which expands on click. 
 
-To test navigation, I have tested the following:
+### **Test**
 
 **Navigation menu items**
 
 * Clicked on each navigation menu item to make sure that they each lead to their respective pages. 
-
 * Clicked on the **View Shop** and **Contact Me** buttons to make sure that they lead to their respective pages. 
 
 **Footer menu items**
@@ -130,7 +130,7 @@ This is first time visitor as well as a returning visitor who hasn't created an 
 
 * User Stories:
     * *As a	site visitor I want to be able to:*
-         * *Easily register for an account so that I can have my account and view my profile.*
+        * *Easily register for an account so that I can have my account and view my profile.*
         * *Easily login and logut* 
         * *Easily recover my password if neccesary*
 
@@ -162,15 +162,25 @@ Test passed, the function works as expected.
 * User Story:
     * *As a user I want to be able to contact the store owner to ask a question regarding products or place a custom order*
 
-The user can contact the site owner easily with a few options. There is a **Contact** menu item in the navabr that will lead to the **Contact Page**. There is also a menu link in the footer, available on each page, apart from the home page, that also leads to the Contact Page. On the home page, the user has the **Contact Me** button, as well as the navbar menu link to Contact Page.
 
-When on the contact page, the user has a few options for contact. They can fill out the contact form and their message will land directly in the site owners email.\
-There is a contact number, an email address as well as the postal address, should that be their preffered way of contacting the site owner. 
 
-The user also has the **Social Media** option to contact the site owner. Currently the links lead to the generic pages but in the future, Petra's actual social media handles will be added. 
+The user can contact the site owner easily with a few options. There is a **Contact** menu item in the navabr that will lead to the **Contact Page**. There is also a menu link in the footer, available on each page (apart from the home page) that also leads to the Contact Page. On the home page, the user has the **Contact Me** button, as well as the navbar menu link to the Contact Page.
+
+When on the contact page, the user has a few options for contact:
+* They can fill out the contact form and their message will land directly in the site owners email.\
+* There is a contact number, an email address as well as the postal address, should that be their preffered way of contacting the site owner. 
+* The user also has the **Social Media** option to contact the site owner. Currently the links lead to the generic pages but in the future, Petra's actual social media handles will be added. 
 
 ### **Result** 
-I have tested all the links and they all correctly lead to the Contact Page. I have also sent several emails from the contact form and confirmed that the email is indeed sent, and recieved by the site owner (my own email in this case).
+I have tested all the links and they all correctly lead to the Contact Page.\
+I have also sent several emails from the contact form and confirmed that the email is indeed sent, and recieved by the site owner (my own email in this case).
+
+![Contact Form Message](media/contact-form.PNG)
+![Message Sent](media/message-sent.PNG)
+![Contact Form Email Received](media/email-received.PNG)
+
+
+
 
 ### **Conclusion**
 Test passed, the function works as expected. 
