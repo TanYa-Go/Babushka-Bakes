@@ -204,17 +204,24 @@ Test passed, the function works as expected.
 ## **The Blog**
 
 * User Story:
-    * *I want to be able to read the latest blog posts, so I can find some reciepts that I can try to bake myself*  
+    * *I want to be able to read the latest blog posts, so I that can find some reciepts that I can try to bake myself*  
 
-The blog is accesible by the navbar menu link. The link leads to the **Blog Page** which has all the blog posts listed. 
+### **Test**
+The blog is accesible by the navbar menu link. The link leads to the **Blog Page** which has all the blog posts listed.\
+The user can also access the blog from the menu in the footer.\
+The user should not see the options to add/edit/delete the blog posts, unless is logged in as a **Superuser**.\
+A **User that is not logged in** and the guest account should not be able to see those options and should only be able to read the blog. 
 
- A **Logged in user**  can see the options to create a new blog post, edit and/or delete an existing blog post.
-
-All buttons were tested and they lead to relevant pages.
-
-A **User that is not logged in** will not see those options and will only be able to read the blog. 
+### **Result**
+All the links were tested and they leed to the relevant pages.\
+All buttons were tested and they all lead tothe relevant pages.\
+I have logged in as a **Supoeruser** and i was able to see the options to add/edit/delete the blog post.\
+When I logged in as a normal user, I could not see the options to add/edit/delete blog posts.\
+When I was not logged in I was not able to see those options neither.
 
 ### **Conclusion**
+
+Test passed, everything functions as expected.
 
 <br>
 
@@ -229,8 +236,8 @@ User Stories:
 
 The user can access the **Products** page from the Home page directly by clicking on the **View Shop** button or 
 through the **Shop** navbar link.\
-When they hover ove the Shop button the dropdown menu will  appear and the user can choose which category of products they wish to go to.
-Or they have the option to click on **All Products"
+When they hover ove the Shop button the dropdown menu should appear and the user can choose which category of products they wish to go to.
+Or they have the option to click on **All Products**.
 
 ### **Test**
 
@@ -241,7 +248,7 @@ From the Products page I have tested whether all the links and images when click
 
 All links and buttons do indeed open the **Produts** page\
 The navbar dropdown menu opens on hover and displays product categories\
-All links and product images do lead to the **Product Detials** page when clicked
+All links and product images do lead to the **Product Detials** page, when clicked.
 
 
 ### **Conclusion**
@@ -264,7 +271,7 @@ They can choose the amount that they want either by typing it into the input fie
 The message should appear to tell them that their action was successful.\
 To access the shopping cart the user can either click on the **Secure Checkout** button in the popup message or by clicking on the shopping cart icon on top of the screen.\
 In the shopping cart the user can review their order and update if required - by using **Update** and **Remove** buttons.\
-As the user ads products to the shopping cart, the total amount should be shown in the page header under the cart icon at all times.\
+As the user ads products to the shopping cart, the total amount should be shown in the page header under the cart icon at all times.
 
 #### **Checkout**
 To purchase the products the user clicks on the **Secure Checkout** button which should lead to the chekcout page.\
