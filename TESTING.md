@@ -61,10 +61,16 @@ I have tested the deployed site with help of the app called [Responsively](https
 Test was also done on the actual devices: Lenovo Laptop 17.3" / Alpha a1 20+ / Xiaomi Redmi 9t /  iPhone 7 / iPhone 8 / iPhone 10 / iPad 
 
 ### **Result**
-The page looks satisfactory on all tested devices and is fully responsive. The Navigation menu collapses on tablet and mobile sizes and expands on desktop size. Hero image is not destorted and displays nicely on all screen sizes tested. 
-
-Images on all other pages are responsive, they are rendering well on all screen sizes tested without overflowing or distorsion.
+The page looks satisfactory on all tested devices and is fully responsive. The Navigation menu collapses on tablet and mobile sizes and expands on desktop size.\
+Images are not destorted and display nicely on all screen sizes tested. 
 Text responsiveness is satisfactory.
+
+![Home Page](media/ress-home.PNG)
+![AboutPage](media/ress-about.PNG)
+![Shop Page](media/ress-shop.PNG)
+![BlogPage](media/ress-blog.PNG)
+
+
 
 ### **Conclusion**
 Test result is satisfactory, everything is functioning as intended.
@@ -171,16 +177,25 @@ When on the contact page, the user has a few options for contact:
 * There is a contact number, an email address as well as the postal address, should that be their preffered way of contacting the site owner. 
 * The user also has the **Social Media** option to contact the site owner. Currently the links lead to the generic pages but in the future, Petra's actual social media handles will be added. 
 
+### **Test** 
+I have tested all the links to see if they lead to the Contact Page.\
+I have sent several emails from the contact form to see if it will arrive.\
+
+
+**Form Validation**
+* Form will not allow submittion if all the fields are empty
+* Form will not allow submittion if any of the fields are empty
+* Form will not allow submitton if the email is not in the right format
+
+
 ### **Result** 
-I have tested all the links and they all correctly lead to the Contact Page.\
-I have also sent several emails from the contact form and confirmed that the email is indeed sent, and recieved by the site owner (my own email in this case).
+
+* The message is being sent and we get the message on the screen to confrim it
+* The email arrives into the inbox 
 
 ![Contact Form Message](media/contact-form.PNG)
 ![Message Sent](media/message-sent.PNG)
 ![Contact Form Email Received](media/email-received.PNG)
-
-
-
 
 ### **Conclusion**
 Test passed, the function works as expected. 
