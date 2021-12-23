@@ -29,7 +29,7 @@ body * {
 }
 
 body {
-    background: url('https://babushka-bakes.s3.eu-central-1.amazonaws.com/media/hero-img.jpg') no-repeat center center fixed;
+    background: url('https://babushka-bakes.s3.eu-central-1.amazonaws.com/media/hero.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 16.4rem);
     color: #333;
