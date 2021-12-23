@@ -8,29 +8,28 @@
         <div class="col text-center mt-4">
             <h2 class="logo-font">Contact Me</h2>
             <hr class="w-50 mb-3">
+            {% if submitted %}
+                <div class="mt-5 text-center ">
+                    <h3>Thank you for your inquiry,</h3>
+                    <h3>Your message was submitted successfully!</h3>
+                </div>
+                <br><br>
+            {% else %}
             <h3 class="message-font">I'd be delighted to meet you and answer any questions you might have.<br />
                 Send me a message and I'll be in touch in no time!</h3>
-
+            {% endif %}
         </div>
     </div>
 </div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6">
-                {% if submitted %}
-                <div class="mt-5 text-center ">
-                    <h4>Thank you for your inquiry,</h4>
-                    <h4>Your message was submitted successfully !</h4>
-                </div>
-                {% else %}
-
                 <form action="#" method="post" class="mt-5" id="form">
                     {% csrf_token %}
                     {{ form.as_p }}
                     <input type="submit" value="Submit" class="btn btn-primary btn-text mt-2 ml-auto">
                 </form>
-                {% endif %}
-            </div>
+               </div>
             <div class="col-12 col-md-6 col-lg-6 mt-5">
                 <img src="{{ MEDIA_URL }}petra.jpg" class="contact-img" alt="Chef Petra">
             </div>
