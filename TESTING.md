@@ -384,12 +384,12 @@ Links do indeed lead to the shop page.
 
 # **Bugs**
 
-*  Bug: After setting up the **Add Product** page I was testing it and ended up gettting a 404 error for the whole site. I could no go back into it. The problem was that product was in thecart, so the browser "remembers" it, but when I deleted it form the databse, it can no longer find it. And since the cart is processed by contexts.py, it is present on every page, so I get the error anywhere I navigate to.
+*  **Bug**: After setting up the **Add Product** page I was testing it and ended up gettting a 404 error for the whole site. I could no go back into it. The problem was that product was in the cart, so the browser "remembers" it, but when I deleted it form the databse, it could no longer find it. And since the cart is processed by contexts.py, it is present on every page, so I got the error anywhere I navigated to.
 
-      Fix: I need to clear the app storage. In the Dev Tools, in the Application tab, I selected the Storage from the sidebar, then clicked the "Clear Site Data" button. With this I emptied the cart and the issue was fixed. 
+      **Fix**: I needed to clear the app storage. In the Dev Tools, in the Application tab, I selected the Storage from the sidebar, then clicked the **Clear Site Data** button. With this I emptied the cart and the issue was fixed. 
 
 
-* Bug: After deployment to heroku and connecting django to aws s3 bucket i was suddenly getting an error 
+* **Bug**: After deployment to heroku and connecting django to AWS S3 bucket I was suddenly getting an error: 
         
         <Error>
         <Code>SignatureDoesNotMatch</Code>
@@ -397,12 +397,20 @@ Links do indeed lead to the shop page.
         The request signature we calculated does not match the signature you provided. Check your key and signing method.
         </Message>
 
-  Fix: It turned out that I needed to add a AWS_S3_ADDRESSING_STYLE = "path" setting which is aparently specific to eu-central-1 region.
+  **Fix**: It turned out that I needed to add a AWS_S3_ADDRESSING_STYLE = "path" setting to settings.py which seems to specific setting for the eu-central-1 region.
 
 
-* Search functionality doesn't work for the entire page. It works only for products which is noyt how its supposed to be. This will be fixed as soon as possible but it there was no time to fix it for this issue.
+* **Bug**: Search functionality doesn't work for the entire page. It works only for products which is not great for user experience.  
 
-* Secure Checkout button in the toast message doesn't seem to work after the shopping cart has been updated. Other times it does work. Similar problem was happening with the Remove link in the cart but this was only happening during the Heroku page downtime so I am not entirely sure that this is a bug or it was due to heroku outage.
+  **Fix**: This will be fixed as soon as possible but since the time was limited the issue remains.
+
+* **Bug**: The **Secure Checkout** button in the toast message doesn't seem to work if the shopping cart has been updated. If the user ads a product to the cart and then clicks **Secure Checkout** in the toast message, the button works. If the user changes the product amount by clicking on the **Update** button, and then tries to go to secure checkout via the link in the toast message, the link will not work. Page will just referesh.
+
+  **Fix**: I haven't been able to figure out why this happens. If the time allowed I would have investiagted further but unfortunately it didin't.   
+
+* **Bug**: The **Remove** button in the shopping cart also behaves differently at different times. Sometimes removes the items and sometimes throws an error. If it throws an error and if you go back with the browser arrow, the item will indeed be removed.
+
+  **Fix**: I was talking to the tutor support regarding this issue and when they tested it, it was working for them. It was two different tutors on two different occasions. Since it was working for them I decided to leave it as it.
 
 
 
