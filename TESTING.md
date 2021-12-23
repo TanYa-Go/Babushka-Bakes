@@ -20,7 +20,14 @@
 # **Code Validation**
 
 ### **HTML**
-All the HTML files were validated with [HTML Validator](https://validator.w3.org/). There was only a few minor errors such as double closing tags or missing tags. These errors were fixed and there are no errors or warnings left. 
+All the HTML files were validated with [HTML Validator](https://validator.w3.org/).\
+
+There were only a few minor errors such as:
+* double closing tags
+* missing closing tags
+* nested **a** element inside the **button** element
+
+These errors were fixed and there are no errors or warnings left. 
 
 ### **CSS**
 All the CSS files have passed the [CSS Validator](https://jigsaw.w3.org/css-validator/) without issues.
@@ -59,12 +66,15 @@ Majority of the errors and warnings was fixed, however some still remain, becasu
 
 ### **Test**
 I was regularly checking responsiveness during development with Chrome developer inspector tools.\
-I have tested the deployed site with help of the app called [Responsively](https://responsively.app/)
+I have tested the deployed site with help of the app called [Responsively](https://responsively.app/).\
 Test was also done on the actual devices: Lenovo Laptop 17.3" / Alpha a1 20+ / Xiaomi Redmi 9t /  iPhone 7 / iPhone 8 / iPhone 10 / iPad 
 
 ### **Result**
-The page looks satisfactory on all tested devices and is fully responsive. The Navigation menu collapses on tablet and mobile sizes and expands on desktop size.\
-Images are not destorted and display nicely on all screen sizes tested. 
+After testing, there was a need to adjust some font sizes and margins to acheieve the satisfactorty result on all devices.\
+The page is optimized for the devices from minimum of 320px screen size\
+The page looks satisfactory on all tested devices and is fully responsive.\
+The Navigation menu collapses on tablet and mobile sizes and expands on desktop size.\
+Images are not distorted and display nicely on all screen sizes tested.\
 Text responsiveness is satisfactory.
 
 ![Home Page](media/ress-home.PNG)
@@ -72,10 +82,19 @@ Text responsiveness is satisfactory.
 ![Shop Page](media/ress-shop.PNG)
 ![BlogPage](media/ress-blog.PNG)
 
+### **Browsers**
+I have tested the app in the following browsers:
 
+* Chrome
+* Opera
+* Mozilla Firefox
+* Microsoft Edge
+* Safari was tested on mobile phones only and works as intended
+
+The website displays properly in all tested browsers, the images are not distorted and all sections and text are clearly visible.
 
 ### **Conclusion**
-Test result is satisfactory, everything is functioning as intended.
+Test passed, everything is functioning as intended.
 
 <br>
 <br>
@@ -93,7 +112,7 @@ Responsiveness was covered in the separate section above, and the results are sa
 
 Navigation bar is visible on all pages of the website  which makes it easy for user to browse around and contributs to a smoother user experience.
 
-On smaller sizes, the navigation menu collapses to a hamburger button which expands on click. 
+On smaller sizes, the navigation menu collapses to a hamburger button which expands on a click. 
 
 ### **Test**
 
@@ -163,22 +182,22 @@ The user should easily log out by clicking the **Logout** link in the **My Accou
 They shouold be asked to confirm if they really want to logout, in case they have clicked this link by accident.  
 
 ### **Test**
-I have tried to register for a new account.\ 
-I have tried to login with my new credentials.\
+I have tried to register for a new account.   
+I have tried to login with my new credentials.\ 
 I tried to change my details and click **Update Information**.\
 I have tried to change my password and I have received an email with a link to reset it. 
-I have tested the logout button
+I have tested the logout button.
 
 **Form Validation**
 
 
 ### **Result**  
-I was able to create the account, and I have received an email to confirm my email.
+I was able to create the account, and I have received an email to confirm my email.\
 I was able to login with my new credentials.\
 When I logged in, I was able to access the **My Profile** page where my details was saved.\
-I have succesfully changed the detials on my account by clicking on the **Update** button.
+I have succesfully changed the details on my account by clicking on the **Update** button.\
 I was able able to succesfully change the password by clicking on the **Forgot Password** link and fillowing instructions.\
-The list of past orders was indeed saved in my account.\ 
+The list of past orders was indeed saved in my account.
 
 
 ### **Conclusion**
@@ -199,13 +218,13 @@ Test passed, the functionality works as expected.
 The user can contact the site owner easily with a few options. There is a **Contact** menu item in the navabr that will lead to the **Contact Page**. There is also a menu link in the footer, available on each page (apart from the home page) that also leads to the Contact Page. On the home page, the user has the **Contact Me** button, as well as the navbar menu link to the Contact Page.
 
 When on the contact page, the user has a few options for contact:
-* They can fill out the contact form and their message will land directly in the site owners email.\
+* They can fill out the contact form and their message will land directly in the site owners email.
 * There is a contact number, an email address as well as the postal address, should that be their preffered way of contacting the site owner. 
 * The user also has the **Social Media** option to contact the site owner. Currently the links lead to the generic pages but in the future, Petra's actual social media handles will be added. 
 
 ### **Test** 
 I have tested all the links to see if they lead to the Contact Page.\
-I have sent several emails from the contact form to see if it will arrive.\
+I have sent several emails from the contact form to see if it will arrive.
 
 
 **Form Validation**
@@ -224,7 +243,7 @@ I have sent several emails from the contact form to see if it will arrive.\
 ![Contact Form Email Received](media/email-received.PNG)
 
 ### **Conclusion**
-Test passed, the function works as expected. 
+Test passed, the functionality works as expected. 
 <br><br>
 
 ## **The Blog**
