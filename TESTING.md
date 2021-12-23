@@ -132,7 +132,7 @@ Test passed, all functions work as expected.
 ## **Account Creation and Profile Management**
 ### **Site Visitor**
 
-This is first time visitor as well as a returning visitor who hasn't created an account previously.
+This could be a first time visitor as well as a returning visitor who hasn't created an account previously.
 
 * User Stories:
     * *As a	site visitor I want to be able to:*
@@ -140,25 +140,49 @@ This is first time visitor as well as a returning visitor who hasn't created an 
         * *Easily login and logut* 
         * *Easily recover my password if neccesary*
 
+Benfeits of creating an account:
+* Personal information saved in their profile for easier future purchases
+* Having a list of past orders saved in their account
+* Receiving notifications about discounts, giveaways etc. 
+
+
+The **My Account** icon is placed in the website header and it is clearly visible and accessible from any page of the website.\
+Visitor should be able to click on the **My Account** icon and see the options to **Login** or **Register**\
+When the visitor clicks on **Register** they should be presented with a form asking for their details.\
+After submitting the form, an email confirmation should be required.\
+When the visitor confirms their email, they should be able to log in with their new credentials.
+
+
+As a **logged-in** user, the user can now see additional option in the **My Account** dropdown menu - **Profile Management**.\
+From here the user can update their profile information that are saved for future purchases.\
+List of past orders should be saved in their account as well.\
+To recover ther password they should be able to click on the **Forgot Password** link and follow the instructions to change the password.\
+The user should easily log out by clicking the **Logout** link in the **My Account** menu.\
+They shouold be asked to confirm if they really want to logout, in case they have clicked this link by accident.  
+
 ### **Test**
+I have tried to register for a new account.\ 
+I have tried to login with my new credentials.\
+I tried to change my details and click **Update Information**.\
+I have tried to change my password and I have received an email with a link to reset it. 
+I have tested the logout button
 
-The **My Account** icon is placed in the website header and it is clearly visible and accessible from any page of the website.
+**Form Validation**
 
-Visitor can click on the **My Account** icon and will see the options to **Login** or **Register**
-
-When the visitor clicks on **Register** they will be presented with a  form asking for their details. After submitting the form, an email confirmation will be required. When the visitor confrims their email, they will be able to log in with their new credentials.
-
-As a **logged-in** user, the user can now see additional option in the **My Account** dropdown menu - **Profile Management**. From here the user can update their profile information that are saved for future purchases.
-
-In case the user forgets their password, they can click on the **Forgot Password?** link and follow the instructions to change the password.
-
-When finished, the user can easily log out by clicking the **Logout** link in the **My Account** menu. They will be asked to confrim if they really want to logout in case they have clicked this link by accident.  
 
 ### **Result**  
-I have followed the proces several times and created several users. The process is simple and intuitive and the visitor can create their account with a few clicks, easily manage their profile and logout.
+I was able to create the account, and I have received an email to confirm my email.
+I was able to login with my new credentials.\
+When I logged in, I was able to access the **My Profile** page where my details was saved.\
+I have succesfully changed the detials on my account by clicking on the **Update** button.
+I was able able to succesfully change the password by clicking on the **Forgot Password** link and fillowing instructions.\
+The list of past orders was indeed saved in my account.\ 
+
 
 ### **Conclusion**
-Test passed, the function works as expected. 
+I have followed the proces several times and created several users. The process is simple and intuitive and the visitor can create their account with a few clicks, easily manage their profile and logout.
+
+Test passed, the functionality works as expected. 
 
 
 <br>
@@ -236,7 +260,7 @@ User Stories:
 
 The user can access the **Products** page from the Home page directly by clicking on the **View Shop** button or 
 through the **Shop** navbar link.\
-When they hover ove the Shop button the dropdown menu should appear and the user can choose which category of products they wish to go to.
+When they hover over the Shop button the dropdown menu should appear and the user should be able to choose which category of products they wish to go to.
 Or they have the option to click on **All Products**.
 
 ### **Test**
