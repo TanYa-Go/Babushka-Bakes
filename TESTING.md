@@ -20,7 +20,7 @@
 # **Code Validation**
 
 ### **HTML**
-All the HTML files were validated with [HTML Validator](https://validator.w3.org/).\
+All the HTML files were validated with [HTML Validator](https://validator.w3.org/).
 
 There were only a few minor errors such as:
 * double closing tags
@@ -161,7 +161,7 @@ This could be a first time visitor as well as a returning visitor who hasn't cre
         * *Easily login and logut* 
         * *Easily recover my password if neccesary*
 
-Benfeits of creating an account:
+Benefits of creating an account:
 * Personal information saved in their profile for easier future purchases
 * Having a list of past orders saved in their account
 * Receiving notifications about discounts, giveaways etc. 
@@ -183,13 +183,15 @@ They shouold be asked to confirm if they really want to logout, in case they hav
 
 ### **Test**
 I have tried to register for a new account.   
-I have tried to login with my new credentials.\ 
+I have tried to login with my new credentials.  
 I tried to change my details and click **Update Information**.\
 I have tried to change my password and I have received an email with a link to reset it. 
 I have tested the logout button.
 
 **Form Validation**
 
+The **Sign Up** form will not allow submission if all the fields are not filled out.  
+All fields are required and the form will give a warning if the user tries to submit without entering all the information.
 
 ### **Result**  
 I was able to create the account, and I have received an email to confirm my email.\
@@ -228,14 +230,14 @@ I have sent several emails from the contact form to see if it will arrive.
 
 
 **Form Validation**
-* Form will not allow submittion if all the fields are empty
-* Form will not allow submittion if any of the fields are empty
-* Form will not allow submitton if the email is not in the right format
+* Form will not allow submission if all the fields are empty
+* Form will not allow submission if any of the fields are empty
+* Form will not allow submission if the email is not in the right format
 
 
 ### **Result** 
 
-* The message is being sent and we get the message on the screen to confrim it
+* The message is being sent and we get the message on the screen to confirm it
 * The email arrives into the inbox 
 
 ![Contact Form Message](media/contact-form.PNG)
@@ -254,15 +256,15 @@ Test passed, the functionality works as expected.
 ### **Test**
 The blog is accesible by the navbar menu link. The link leads to the **Blog Page** which has all the blog posts listed.\
 The user can also access the blog from the menu in the footer.\
-The user should not see the options to add/edit/delete the blog posts, unless is logged in as a **Superuser**.\
-A **User that is not logged in** and the guest account should not be able to see those options and should only be able to read the blog. 
+The user should not see the options to add/edit/delete the blog posts, unless they are logged in as a **Superuser**.\
+A **User that is not logged in** and the **Guest User** should not be able to see those options and should only be able to read the blog. 
 
 ### **Result**
 All the links were tested and they leed to the relevant pages.\
-All buttons were tested and they all lead tothe relevant pages.\
-I have logged in as a **Supoeruser** and i was able to see the options to add/edit/delete the blog post.\
-When I logged in as a normal user, I could not see the options to add/edit/delete blog posts.\
-When I was not logged in I was not able to see those options neither.
+All buttons were tested and they all lead to the relevant pages.\
+I have logged in as a **Superuser** and I was able to see the options to add/edit/delete the blog post.\
+When I logged in as a **Guest User**, I could not see the options to add/edit/delete blog posts.\
+When I was not logged in, I was not able to see those options neither.
 
 ### **Conclusion**
 
@@ -272,7 +274,7 @@ Test passed, everything functions as expected.
 
 ## **The Shop**
 
- ### **View Products**
+ ## **View Products**
 
 User Stories:
 
@@ -281,8 +283,8 @@ User Stories:
 
 The user can access the **Products** page from the Home page directly by clicking on the **View Shop** button or 
 through the **Shop** navbar link.\
-When they hover over the Shop button the dropdown menu should appear and the user should be able to choose which category of products they wish to go to.
-Or they have the option to click on **All Products**.
+When they hover over the Shop button, the dropdown menu should appear and the user should be able to see all  categories of produts. 
+They can also to click on **All Products** to see all products from all categories.
 
 ### **Test**
 
@@ -291,8 +293,8 @@ From the Products page I have tested whether all the links and images when click
 
 ### **Result**
 
-All links and buttons do indeed open the **Produts** page\
-The navbar dropdown menu opens on hover and displays product categories\
+All links and buttons do indeed open the **Produts** page.\
+The navbar dropdown menu opens on hover and displays product categories.\
 All links and product images do lead to the **Product Detials** page, when clicked.
 
 
@@ -302,7 +304,7 @@ Test passed, functionality works as expected.
 
 
 
-### **Purchase Products**
+## **Purchase Products**
 User Stories:
 * *I want to be able to add product to the cart so that I can purchase it*
 * *I want to be able to adjust the items in cart so that I can purchase only products and amounts that I want*
@@ -311,17 +313,56 @@ User Stories:
 * *I want to be able to receive an email confirmation after purchase so that I can have the details of my order in case I need to contact the shop*
 
 #### **Add To Cart**
-To purchase the products the shopper needs to navigate to the **Product details** page where they have the option to add a product to cart.\
-They can choose the amount that they want either by typing it into the input field or by clicking up and down arrows.\
-The message should appear to tell them that their action was successful.\
-To access the shopping cart the user can either click on the **Secure Checkout** button in the popup message or by clicking on the shopping cart icon on top of the screen.\
+To purchase the products, the shopper needs to navigate to the **Product details** page where they have the option to add a product to cart.\
+They can choose the amount that they want, either by typing it into the input field or by clicking up and down arrows.\
+The toast message should appear to tell them that their action was successful.\
+To access the shopping cart the user can either click on the **Secure Checkout** button in the popup message, or by clicking on the shopping cart icon on top of the screen.\
 In the shopping cart the user can review their order and update if required - by using **Update** and **Remove** buttons.\
-As the user ads products to the shopping cart, the total amount should be shown in the page header under the cart icon at all times.
+As the user ads products to the shopping cart, the total amount should be shown in the page header under the cart icon at all times and update every time they add or remove a product.
 
-#### **Checkout**
-To purchase the products the user clicks on the **Secure Checkout** button which should lead to the chekcout page.\
+### **Test**
+* Adding product to cart by clicking the **Add to cart** button. Default value is set to 1.
+* Typing the amount in the input field and clicking the **Add to cart** button
+* Clicking the **Add to cart** button with no value in the field
+* Clicking the **Add to cart** button with zero value in the field
+* Clicking the **Add to cart** button with 21 products in the field. 
+* Typing in 100 products and trying to add to cart
+
+**Result**
+* It is possible to add one item to cart with the default value 1
+* Trying to submit with a zero typed in the field will throw an error.
+* By default, the maximum amount the user can add to cart is 20 products. So when the user enters any number between 1 and 20, they can succesfully add it to cart. Should the user choose a number over 20 there will be a pop up warning saying that 20 products is maximum.
+* Amending the amount by clicking up and down arrows will successfully change the product amount.
+* Bug found: If the user adds maximum number of products to the cart and then goes back to the same product, and add more products, which will be over the allowed amount, the cart will update and the user is able to order more than 20 products. More about this in the [Bugs](#bugs) Section
+
+**Conclusion**
+
+The **Add To Cart** functionality works but it has its downsides and can cause potential problems for the site owner due to number of products ordered. This bug needs to be fixed as soon as possible.
+
+
+### **Checkout**
+To purchase the products the user clicks on the **Secure Checkout** button which should lead to the checkout page.\
 On the checkout page the user needs to fill out their personal information, delivery information and payment details, and click **Complete Order** button.
-The message should pop up telling the user that the action was successful and that they will receive confrimation email.
+The message should pop up advising the user that the order was successful and that they will receive an order confirmation email.
+
+### **Test**
+* I have tried to purchase products by clicking on the **Secure Checkout** button in the toast message and in the shopping cart 
+* I have entered my information in the form and tried to pay for the products
+
+### **Result**
+* When clicking on the **Secure Checkout** button in the toast message I was successfully redirected to the **Checkout Page**. Apart from when clicking it after updating a product amount, the issue already described in [Bugs](#bugs) section.
+* When clicking on the **Secure Checkout** button in on the bottom of the **Shopping Cart Page** I was successfully redirected to the **Checkout Page**. 
+* When filling out the form it is clear which fields are required. The form will not submit if the fields mark with a * were not filled out. 
+* When clicked on the  **Complete Order** button I receive a toast message saying that the purchase was successful and that I will recieve a confirmation email.
+* Stripe webhook shows that the transaction was indeed successful 
+
+  ![Stripe Webhook](media/webhook.PNG)
+
+* The confrirmation email was successfully received.
+
+  ![Order Confirmation Email](media/order-conf-email.PNG)
+
+
 
 ### **Conclusion**
 
@@ -329,6 +370,12 @@ Test passed, functionality works as expected.
 
 <br>
 
+## **CRUD operations**
+
+The **Superuser** is the only one who is able to perform CRUD operations. The site owner can give superuser credentials to staff as required.
+
+### **Product CRUD**
+### **Blog CRUD**
 ## **Search Functionality**
 
 User Story:
@@ -404,13 +451,18 @@ Links do indeed lead to the shop page.
 
   **Fix**: This will be fixed as soon as possible but since the time was limited the issue remains.
 
-* **Bug**: The **Secure Checkout** button in the toast message doesn't seem to work if the shopping cart has been updated. If the user ads a product to the cart and then clicks **Secure Checkout** in the toast message, the button works. If the user changes the product amount by clicking on the **Update** button, and then tries to go to secure checkout via the link in the toast message, the link will not work. Page will just referesh.
+* **Bug**: The maximum amount of each product that the user should be able to add into the cart is set to 20. However there is a bug allowing the user to add more of the same product. If the user adds one product and then goes back to the same product page, they will be able to add more products to the cart. The cart will accept it and the user is able to finish the transaction and pay for the order. 
 
-  **Fix**: I haven't been able to figure out why this happens. If the time allowed I would have investiagted further but unfortunately it didin't.   
+    **Fix**: I wanted to implement the fix by adding the check in the checkout page, to check if any line_item has quantity over 20, to display a message saying they should contact the site owner, otherwise to allow normal checkout procedure. Again, the time was limited and sadly I was not able to finish this fix.  
 
-* **Bug**: The **Remove** button in the shopping cart also behaves differently at different times. Sometimes removes the items and sometimes throws an error. If it throws an error and if you go back with the browser arrow, the item will indeed be removed.
 
-  **Fix**: I was talking to the tutor support regarding this issue and when they tested it, it was working for them. It was two different tutors on two different occasions. Since it was working for them I decided to leave it as it.
+* **Bug**: The **Secure Checkout** button in the toast message doesn't seem to work if the shopping cart has been updated. If the user ads a product to the cart and then clicks **Secure Checkout** in the toast message, the button works. However if the user changes the product amount by clicking on the **Update** button, and then tries to go to secure checkout via the button in the toast message, the link will not work. Page will just referesh. The other **Secure checkout** button on the bottom of the page, works perfectly no matter if there was an update or not. 
+
+  **Fix**: I haven't been able to figure out why this happens. If the time allowed I would have investigated further but unfortunately it did not.   
+
+* **Bug**: The **Remove** button in the shopping cart also behaves differently at different times. Sometimes it removes the items and sometimes throws an error. If it throws an error and if you go back to the cart with the browser arrow, the item will indeed be removed.
+
+  **Fix**: I was talking to the tutor support regarding this issue and when they tested it, it was working for them. It was two different tutors on two different occasions. They were also not sure if the issue is happening because of Heroku having issues at the time. Since it was working for them I decided to leave it as it.
 
 
 
