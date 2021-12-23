@@ -39,7 +39,6 @@ def checkout(request):
 
     if request.method == 'POST':
         cart = request.session.get('cart', {})
-
         form_data = {
             'full_name': request.POST['full_name'],
             'email': request.POST['email'],
@@ -92,6 +91,7 @@ def checkout(request):
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
+
     else:
         cart = request.session.get('cart', {})
         if not cart:
