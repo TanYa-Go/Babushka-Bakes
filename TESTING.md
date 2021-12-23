@@ -384,7 +384,27 @@ Links do indeed lead to the shop page.
 
 # **Bugs**
 
-*
+*  Bug: After setting up the **Add Product** page I was testing it and ended up gettting a 404 error for the whole site. I could no go back into it. The problem was that product was in thecart, so the browser "remembers" it, but when I deleted it form the databse, it can no longer find it. And since the cart is processed by contexts.py, it is present on every page, so I get the error anywhere I navigate to.
+
+      Fix: I need to clear the app storage. In the Dev Tools, in the Application tab, I selected the Storage from the sidebar, then clicked the "Clear Site Data" button. With this I emptied the cart and the issue was fixed. 
+
+
+* Bug: After deployment to heroku and connecting django to aws s3 bucket i was suddenly getting an error 
+        
+        <Error>
+        <Code>SignatureDoesNotMatch</Code>
+        <Message>
+        The request signature we calculated does not match the signature you provided. Check your key and signing method.
+        </Message>
+
+  Fix: It turned out that I needed to add a AWS_S3_ADDRESSING_STYLE = "path" setting which is aparently specific to eu-central-1 region.
+
+
+* Search functionality doesn't work for the entire page. It works only for products which is noyt how its supposed to be. This will be fixed as soon as possible but it there was no time to fix it for this issue.
+
+* Secure Checkout button in the toast message doesn't seem to work after the shopping cart has been updated. Other times it does work. Similar problem was happening with the Remove link in the cart but this was only happening during the Heroku page downtime so I am not entirely sure that this is a bug or it was due to heroku outage.
+
+
 
 
 
