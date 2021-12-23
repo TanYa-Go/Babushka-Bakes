@@ -142,6 +142,7 @@ The website is currently a fully functional shop that covered all site owners wi
 * Pagination for the products page and blog page
 * Add some videos of the Bakery and Petra at work 
 * Link the actual Petra's social media pages in the footer, instead of a generic page
+* Search funcionality to work for the whole site not just products. 
 
 
 [Back to Top](#table-of-contents)

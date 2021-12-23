@@ -4,13 +4,15 @@
 * [Code Validation](#code-validation)
 * [Responsiveness](#responsiveness)
 * [User Stories](#user-stories)
-* [Functionality](#functionality)
-    * [My Profile](#my-profile)
-    * [Shop](#shop)
-    * [Navigation](#navigation)
-    * [Footer](#footer)
-    * [Search](#search)
-    * [Blog](#blog)
+    * [Navigation](#navigation-and-responsiveness)
+    * [Account Creation](#account-creation-and-profile-management)
+    * [Contact](#contact)
+    * [The Blog](#the-blog)
+    * [The Shop](#the-shop)
+    * [Search](#search-functionality)
+* [Error Pages](#error-pages)
+* [Bugs](#bugs)
+* [Important](#important)
 
 
 <br/>
@@ -80,7 +82,7 @@ Test result is satisfactory, everything is functioning as intended.
 
 # **User Stories**
 
-## **Navigation and rensponsiveness**
+## **Navigation and responsiveness**
 ### **All users** 
 
 User Story:
@@ -320,7 +322,7 @@ User Story:
 
  To test the search functionality I have tried inputting random words into search input field. 
  I also tried the same word with capital letter
- I have also tried to search without inputting something in the search field. 
+ I have also tried to click search without inputting anything in the search field. 
 
  ### **Result**
  * If the searched word is a part of a product or its description, this product will display on the page. If they are not, we get no results.
@@ -329,8 +331,33 @@ User Story:
 ### **Conclusion**
 Test passed, the functionality works as planned.
 
+Although the search functionality works well for searching products, it should work across the page so user can search for any item, e.g blog post.. Due to lack of time I was not able to implement this for this release but it will be implemented in the future. 
+
 <br>
 <br>
+
+## **Error Pages**
+
+I have implemented Error 404 (Page Not Found) and Error 500 (Internal Server Error) pages as they are the most common erros that can occur.\
+The goal is to prevent the user from leaving the page if error occurs so I've added a link back to the shop on the error page.
+
+### **Test**
+To test error 404 I have inputted a random word at the end of the page URL. e.g. https://babushka-bakes.herokuapp.com/lalala which should trigger the page 404. 
+
+To test error 500 I have changed a template name. 
+
+I have also tested links on the error pages
+### **Result**
+
+Inputting random word at the end of the URL does indeed trigger page 404.\
+Wrong template name did trigger the page 500.\
+Links do indeed lead to the shop page.
+
+![Error 404](media/404.PNG)
+![Error 500](media/500.PNG)
+
+
+
 
 # **Functionality**
 
@@ -338,7 +365,7 @@ Test passed, the functionality works as planned.
 
 # **Bugs**
 
-
+*
 
 
 
