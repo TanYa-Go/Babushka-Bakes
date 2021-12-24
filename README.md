@@ -193,6 +193,8 @@ For the application to function as planned it was required to create the followi
 
 ![Database Schema](media/database-schema.png)
 
+### **Order**
+
 | Name           | Database Key    | Field Type           | Validation                                                                            |
 |----------------|-----------------|----------------------|---------------------------------------------------------------------------------------|
 | Order Number   | order_number    | models.CharField     | max_length=32,   null=False, editable=False                                           |
@@ -213,7 +215,7 @@ For the application to function as planned it was required to create the followi
 | Original Cart  | original_cart   | models.TextField     | null=False, blank=False,   default=''"                                                |
 | Stripe pid     | stripe_pid      | models.CharField     | max_length=254,   null=False, blank=False, default=""                                 |
 
-**Blog Post**
+### **Blog Post**
 
 | Name     | Database Key | Field Type          | Validation                     |
 |----------|--------------|---------------------|--------------------------------|
@@ -224,12 +226,35 @@ For the application to function as planned it was required to create the followi
 | Image    | image        | models.ImageField   | (null=True, blank=True)        |
 
 
-**Product Category**
+### **Product Category**
 
 | Name            | Database Key  | Field Type | Validation                               |
 |-----------------|---------------|------------|------------------------------------------|
 | Name            | name          | CharField  | max_length=254                           |
 | Friendly   Name | friendly_name | CharField  | max_length=254,   null=True, blank=False |
+
+
+
+### **User Profile**
+| Name           | Database Key    | Field Type           | Validation                                                                            |
+|----------------|-----------------|----------------------|---------------------------------------------------------------------------------------|
+| Order Number   | order_number    | models.CharField     | max_length=32,   null=False, editable=False                                           |
+| User Profile   | user_profile    | models.ForeignKey    | UserProfile,   on_delete=models.SET_NULL, null=True, blank=True,related_name='orders' |
+| Full Name      | full_name       | models.CharField     | max_length=50,   null=False, blank=False                                              |
+| Email          | email           | models.EmailField    | max_length=254,   null=False, blank=False                                             |
+| Phone Number   | phone_number    | models.CharField     | max_length=20,   null=False, blank=False                                              |
+| Country        | country         | CountryField         | blank_label='Country *',   null=False, blank=False                                    |
+| Post Code      | postcode        | models.CharField     | max_length=20, null=True,   blank=True                                                |
+| Town or City   | town_or_city    | models.CharField     | max_length=40, null=False, blank=False                                                |
+| Street Address | street_address1 | models.CharField     | max_length=80,   null=False, blank=False                                              |
+| Street Address | street_address2 | models.CharField     | max_length=80,   null=False, blank=False                                              |
+| County         | county          | models.CharField     | max_length=80,   null=False, blank=False                                              |
+| Date           | date            | models.DateTimeField | auto_now_add=True                                                                     |
+| Delivery Cost  | delivery_cost   | models.DecimalField  | max_digits=6,   decimal_places=2, null=False, default=0                               |
+| Order Total    | order_total     | models.DecimalField  | max_digits=10,   decimal_places=2, null=False, default=0                              |
+| Grand Total    | grand_total     | models.DecimalField  | max_digits=10,   decimal_places=2, null=False, default=1                              |
+| Original Cart  | original_cart   | models.TextField     | null=False, blank=False,   default=''"                                                |
+| Stripe pid     | stripe_pid      | models.CharField     | max_length=254,   null=False, blank=False, default=""                                 |
 
 
 **Product**
