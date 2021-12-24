@@ -358,7 +358,7 @@ The message should pop up advising the user that the order was successful and th
 
   ![Stripe Webhook](media/webhook.PNG)
 
-* The confrirmation email was successfully received.
+* The confirmation email was successfully received.
 
   ![Order Confirmation Email](media/order-conf-email.PNG)
 
@@ -372,10 +372,74 @@ Test passed, functionality works as expected.
 
 ## **CRUD operations**
 
-The **Superuser** is the only one who is able to perform CRUD operations. The site owner can give superuser credentials to staff as required.
+The **Superuser** is the only one who is able to perform CRUD operations. The site owner can give the superuser credentials to the staff as required.
+The **Superuser** can perform the CRUD operations:
+* from the **Django Admin** panel which can be accesed by inputting **"/admin"** at the end of the url.  
+* from the website itself by going into the **Product Management** menu in the **My Account** menu,
+* Product / Blog pages where they have **Edit / Delete** buttons available 
+
 
 ### **Product CRUD**
+
+Super user should be able to add new products, amend the existing product details and delete the product.  
+The toast message should pop up advising the user of successful or unsuccesful action
+
+### **Test**
+
+I have tried to access the **Product Mamagement** from the **My Account** menu.\
+I have tried to submit the form with no details entered.\
+I have tried to submit the form without required fields marked with a *.\
+I have tried to submit with the wrong format for the price field.\
+I have tried to submit the form with all the details entered correctly.\
+I have tested the **Edit Button**.\
+I have tested the **Delete Button**.\
+I have also tested all of the above from the **Django Admin** panel.
+### **Result**
+The links to the **Product Management** lead to the respective page.\
+The form will not allow submission if the form is empty, and will give warnings because of the required fields.\
+lf the price is entered in the wrong format the form will not allow submission.\
+When all the details are entered correctly, the  porduct is successfully added to the shop.\
+The toast message appears to asvise that the action was successfull.\
+The **Edit** button leads to the product management page and ifthe form is filled out correctly, the Product will be updated.\
+The **Delete** button deleted the product and returend to the **All Products** page and the toast message appears confirming out action was completed.
+
+All the actions are also successfully done from the admin panel. 
+
+### **Conclusion**
+
+All CRUD operations for the product management work as intended.\
+Test passed. 
+
+
 ### **Blog CRUD**
+
+The **Superuser** can perform the CRUD operations for the blog by clicling on the respective buttons on the **Blog Page** itself or from the admin panel.
+
+### **Test**
+
+I have tried to create a new blog post by clicking the **Add New Post** button on the **Blog Page**.  
+I have tried to submit an empty form.\
+I have tried to submit the form with all the details entered correctly.\
+I have tried to Edit a blog post.\
+I have tried to delete a blog post.\
+I have also tested all of the above from the **Django Admin** panel.
+
+### **Result**
+The **Add New Post** button leads correctly to the Create New Post form.\
+The form will not allow submission if all the field are empty and will give a warning.\
+If all the fields are entered correctly, the new Blog Post will be created.
+All the fields apart from the Image and the Rating are required.\
+The **Edit** button leads to the **Update Post** Page
+The **Edit** button leads to the **Delete Post** Page, were you can see the Blog Post title and Image and make sure that you want to delete it.\
+The **Delete** button does inded delete the post.
+I have also tested all of the above from the **Django Admin** panel.
+### **Conclusion**
+
+All CRUD operations for the Blog Posts work as intended.\
+Test passed.
+
+<br><br>
+
 ## **Search Functionality**
 
 User Story:
@@ -423,12 +487,6 @@ Links do indeed lead to the shop page.
 ![Error 500](media/500.PNG)
 
 
-
-
-# **Functionality**
-
-
-
 # **Bugs**
 
 *  **Bug**: After setting up the **Add Product** page I was testing it and ended up gettting a 404 error for the whole site. I could no go back into it. The problem was that product was in the cart, so the browser "remembers" it, but when I deleted it form the databse, it could no longer find it. And since the cart is processed by contexts.py, it is present on every page, so I got the error anywhere I navigated to.
@@ -462,7 +520,7 @@ Links do indeed lead to the shop page.
 
 * **Bug**: The **Remove** button in the shopping cart also behaves differently at different times. Sometimes it removes the items and sometimes throws an error. If it throws an error and if you go back to the cart with the browser arrow, the item will indeed be removed.
 
-  **Fix**: I was talking to the tutor support regarding this issue and when they tested it, it was working for them. It was two different tutors on two different occasions. They were also not sure if the issue is happening because of Heroku having issues at the time. Since it was working for them I decided to leave it as it.
+  **Fix**: I was talking to the tutor support regarding this issue and when they tested it, it was working for them. It was two different tutors on two different occasions. They were also not sure if the issue is happening because of Heroku having issues at the time. Since it was working for them I decided to leave it as is.
 
 
 
