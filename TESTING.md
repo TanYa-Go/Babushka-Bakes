@@ -516,11 +516,11 @@ Links do indeed lead to the shop page.
 
 * **Bug**: The **Secure Checkout** button in the toast message doesn't seem to work if the shopping cart has been updated. If the user ads a product to the cart and then clicks **Secure Checkout** in the toast message, the button works. However if the user changes the product amount by clicking on the **Update** button, and then tries to go to secure checkout via the button in the toast message, the link will not work. Page will just referesh. The other **Secure checkout** button on the bottom of the page, works perfectly no matter if there was an update or not. 
 
-  **Fix**: I haven't been able to figure out why this happens. If the time allowed I would have investigated further but unfortunately it did not.   
+  **Fix**: The href link was wrong and it was pointing to the **view_cart** page istead of the **checkout**.  
 
 * **Bug**: The **Remove** button in the shopping cart also behaves differently at different times. Sometimes it removes the items and sometimes throws an error. If it throws an error and if you go back to the cart with the browser arrow, the item will indeed be removed.
 
-  **Fix**: I was talking to the tutor support regarding this issue and when they tested it, it was working for them. It was two different tutors on two different occasions. They were also not sure if the issue is happening because of Heroku having issues at the time. Since it was working for them I decided to leave it as is.
+  **Fix**: It turned out that I have had a duplicated functionality - a link that triggers the URL AND a JS function that calls the Ajax to the URL. I was making two requests to the same **remove_from_cart** - one from the href and another from Ajax. And one of them will always fail because, when the first one (whichever first) is completed, the item will no longer be in the cart for the second one.
 
 
 
