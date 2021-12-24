@@ -215,15 +215,17 @@ For the application to function as planned it was required to create the followi
 | Original Cart  | original_cart   | models.TextField     | null=False, blank=False,   default=''"                                                |
 | Stripe pid     | stripe_pid      | models.CharField     | max_length=254,   null=False, blank=False, default=""                                 |
 
-### **Blog Post**
 
-| Name     | Database Key | Field Type          | Validation                     |
-|----------|--------------|---------------------|--------------------------------|
-| Title    | title        | models.CharField    | max_length=254                 |
-| Subtitle | subtitle     | models.CharField    | max_length=254                 |
-| Author   | author       | models.ForeignKey   | User, on_delete=models.CASCADE |
-| Body     | body         | models.TextField()  |                                |
-| Image    | image        | models.ImageField   | (null=True, blank=True)        |
+### **Order Line Item**
+
+| Name            | Database Key   | Field Type          | Validation                                                                           |
+|-----------------|----------------|---------------------|--------------------------------------------------------------------------------------|
+| Order           | order          | models.ForeignKey   |  Order, null=False,   blank=False,on_delete=models.CASCADE, related_name='lineitems' |
+| Product         | product        | models.ForeignKey   | Product, null=False, blank=False,on_delete=models.CASCADE                            |
+| Quantity        |       quantity | models.IntegerField | null=False, blank=False, default=0                                                   |
+| Line Item Total | lineitem_total | models.DecimalField | max_digits=6, decimal_places=2, null=False, blank=False,   editable=False            |
+
+
 
 
 ### **Product Category**
@@ -234,6 +236,26 @@ For the application to function as planned it was required to create the followi
 | Friendly   Name | friendly_name | CharField  | max_length=254,   null=True, blank=False |
 
 
+### **Product**
+
+| Name        | Database Key | Field Type          | Validation                                                    |
+|-------------|--------------|---------------------|---------------------------------------------------------------|
+| Category    | category     | models.ForeignKey   | Category', null=True, blank=True,   on_delete=models.SET_NULL |
+| SKU         | sku          | models.CharField    | max_length=254, null=True, blank=True                         |
+| Name        | name         | models.CharField    | max_length=254                                                |
+| Description | description  | models.TextField    |                                                               |
+| Price       | price        | models.DecimalField | max_digits=6, decimal_places=2                                |
+| Rating      | rating       | models.DecimalField | max_digits=6, decimal_places=2, null=True, blank=True         |
+| Image       | image        | ImageField          | null=True, blank=True                                         |
+|             |              |                     |                                                               |
+|             |              |                     |                                                               |
+
+### **User**
+
+| Name      | Database Key | Field Type        | Validation                              |
+|-----------|--------------|-------------------|-----------------------------------------|
+| Full Name | full_name    | models.CharField  | max_length=254                          |
+| Email     | email        | models.EmailField | max_length=254, null=False, blank=False |
 
 ### **User Profile**
 | Name           | Database Key    | Field Type           | Validation                                                                            |
@@ -257,7 +279,26 @@ For the application to function as planned it was required to create the followi
 | Stripe pid     | stripe_pid      | models.CharField     | max_length=254,   null=False, blank=False, default=""                                 |
 
 
-**Product**
+### **Blog Post**
+
+| Name     | Database Key | Field Type          | Validation                     |
+|----------|--------------|---------------------|--------------------------------|
+| Title    | title        | models.CharField    | max_length=254                 |
+| Subtitle | subtitle     | models.CharField    | max_length=254                 |
+| Author   | author       | models.ForeignKey   | User, on_delete=models.CASCADE |
+| Body     | body         | models.TextField()  |                                |
+| Image    | image        | models.ImageField   | (null=True, blank=True)        |
+
+
+### **Contact**
+
+| Name    | Database Key | Field Type        | Validation                              |
+|---------|--------------|-------------------|-----------------------------------------|
+| Name    | name         | models.CharField  | max_length=254                          |
+| Email   | email        | models.EmailField | max_length=254, null=False, blank=False |
+| Subject | subject      | models.CharField  | max_length=254                          |
+| Message | message      | models.TextField  |                                         |
+
 ### **Wireframes**
 
 [Home Page](media/home.png)\

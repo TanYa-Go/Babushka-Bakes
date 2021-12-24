@@ -18,8 +18,8 @@ from os import path
 if os.path.exists("env.py"):
     import env
 
-development = os.environ.get("DEVELOPMENT")
-DEBUG = development
+
+DEBUG = "DEVELOPMENT" in os.environ
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
