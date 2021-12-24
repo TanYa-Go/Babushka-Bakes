@@ -525,7 +525,6 @@ Links do indeed lead to the shop page.
 
 
 
-
 # **Important**
 
 During the process of copying the data from the SQLite3 database to the Postgress database, I have accidentally used the wrong command and commited my db.json file along with the auth permissions to GitHub. When I realized what had happened, I had already made many more commits on top of that one so it was not possible to just revert a commit. I have searched for the best solution to rectify this and have found that there is a way of going into the git commit history and remove it from the commits, either by the rebase or the cherry-pick commands. However, since the file was in the git history for significant amount of time and there were many more commits done after that one, I believe that it takes much more experience to tackle this issue. I was coming very close to the submit deadline and I did not dare to mess with the commit history. I have also consulted my mentor and I decided to take his advice. I removed the existing db.json file, and created a new fixture file for each app separately, to be certain to not include the auth perissions. For that I have used the following  command: 
